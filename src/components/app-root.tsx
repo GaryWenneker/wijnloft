@@ -1,4 +1,5 @@
-import { Component, h, Listen, State } from '@stencil/core';
+import { Component, Listen, State, h } from '@stencil/core';
+
 import { LocationSegments } from '@stencil/router';
 
 @Component({
@@ -21,6 +22,7 @@ export class IpAppRoot {
   render() {
     return (
       <main>
+        <app-header></app-header>
         <stencil-router>
           <stencil-route-switch scrollTopOffset={0}>
             <stencil-route
@@ -30,18 +32,56 @@ export class IpAppRoot {
               routeRender={props => <ip-stencil-route-listener props={props} />}
             />
             <stencil-route
+              url="/aanmelden"
+              component="ip-app-aanmelden"
+              exact={true}
+              routeRender={props => <ip-stencil-route-listener props={props} />}
+            />
+            <stencil-route
               url="/about"
               exact={true}
               component="ip-app-about"
               routeRender={props => <ip-stencil-route-listener props={props} />}
             />
+            <stencil-route
+              url="/hoe-werkt-het"
+              exact={true}
+              component="ip-app-hoe"
+              routeRender={props => <ip-stencil-route-listener props={props} />}
+            />
+            <stencil-route
+              url="/voordelen"
+              exact={true}
+              component="ip-app-voordelen"
+              routeRender={props => <ip-stencil-route-listener props={props} />}
+            />
+            <stencil-route
+              url="/onze-wijnhuizen"
+              exact={true}
+              component="ip-app-onze-wijnhuizen"
+              routeRender={props => <ip-stencil-route-listener props={props} />}
+            />
+            <stencil-route
+              url="/faq"
+              exact={true}
+              component="ip-app-faq"
+              routeRender={props => <ip-stencil-route-listener props={props} />}
+            />
           </stencil-route-switch>
         </stencil-router>
-        <ul>
-          {this.pageState.map(page => (
-            <li>{page}</li>
-          ))}
-        </ul>
+
+        <div class="container">
+          <div class="row">
+            <div class="twelve column">
+              <ul>
+                {this.pageState.map(page => (
+                  <li>{page}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </main>
     );
   }

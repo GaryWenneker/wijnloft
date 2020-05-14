@@ -1,7 +1,9 @@
 import { Config } from '@stencil/core';
+import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'ip-stencil-route-listener',
+  globalStyle: 'src/assets/css/styles.css',
   outputTargets: [
     {
       type: 'dist'
@@ -11,5 +13,10 @@ export const config: Config = {
       serviceWorker: null
     }
   ],
-  copy: [{ src: '_redirects' }]
+  copy: [{ src: '_redirects' }],
+  plugins: [sass({
+    injectGlobalPaths: [
+      'sssrc/scss/styles.scss',
+    ]
+  })],
 };

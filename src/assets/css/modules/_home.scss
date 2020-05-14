@@ -1,0 +1,11 @@
+.home-intro {
+  top: 0px;
+
+  @include mq("M") {
+    top: 80px;
+  }
+
+  @include mq("L") {
+    top: 240px;
+  }
+}

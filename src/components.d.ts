@@ -7,22 +7,71 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { LocationSegments, RouteRenderProps, } from "@stencil/router";
 export namespace Components {
+    interface AppHeader {
+        "signOut": any;
+        "user"?: any;
+    }
+    interface GlBackgroundVideo {
+        "muted": boolean;
+        "poster": string;
+        "src": string;
+    }
+    interface IpAppAanmelden {
+    }
     interface IpAppAbout {
+    }
+    interface IpAppFaq {
+    }
+    interface IpAppHoe {
     }
     interface IpAppHome {
     }
+    interface IpAppOnzeWijnhuizen {
+    }
     interface IpAppRoot {
+    }
+    interface IpAppVoordelen {
     }
     interface IpStencilRouteListener {
         "props": RouteRenderProps | undefined;
     }
 }
 declare global {
+    interface HTMLAppHeaderElement extends Components.AppHeader, HTMLStencilElement {
+    }
+    var HTMLAppHeaderElement: {
+        prototype: HTMLAppHeaderElement;
+        new (): HTMLAppHeaderElement;
+    };
+    interface HTMLGlBackgroundVideoElement extends Components.GlBackgroundVideo, HTMLStencilElement {
+    }
+    var HTMLGlBackgroundVideoElement: {
+        prototype: HTMLGlBackgroundVideoElement;
+        new (): HTMLGlBackgroundVideoElement;
+    };
+    interface HTMLIpAppAanmeldenElement extends Components.IpAppAanmelden, HTMLStencilElement {
+    }
+    var HTMLIpAppAanmeldenElement: {
+        prototype: HTMLIpAppAanmeldenElement;
+        new (): HTMLIpAppAanmeldenElement;
+    };
     interface HTMLIpAppAboutElement extends Components.IpAppAbout, HTMLStencilElement {
     }
     var HTMLIpAppAboutElement: {
         prototype: HTMLIpAppAboutElement;
         new (): HTMLIpAppAboutElement;
+    };
+    interface HTMLIpAppFaqElement extends Components.IpAppFaq, HTMLStencilElement {
+    }
+    var HTMLIpAppFaqElement: {
+        prototype: HTMLIpAppFaqElement;
+        new (): HTMLIpAppFaqElement;
+    };
+    interface HTMLIpAppHoeElement extends Components.IpAppHoe, HTMLStencilElement {
+    }
+    var HTMLIpAppHoeElement: {
+        prototype: HTMLIpAppHoeElement;
+        new (): HTMLIpAppHoeElement;
     };
     interface HTMLIpAppHomeElement extends Components.IpAppHome, HTMLStencilElement {
     }
@@ -30,11 +79,23 @@ declare global {
         prototype: HTMLIpAppHomeElement;
         new (): HTMLIpAppHomeElement;
     };
+    interface HTMLIpAppOnzeWijnhuizenElement extends Components.IpAppOnzeWijnhuizen, HTMLStencilElement {
+    }
+    var HTMLIpAppOnzeWijnhuizenElement: {
+        prototype: HTMLIpAppOnzeWijnhuizenElement;
+        new (): HTMLIpAppOnzeWijnhuizenElement;
+    };
     interface HTMLIpAppRootElement extends Components.IpAppRoot, HTMLStencilElement {
     }
     var HTMLIpAppRootElement: {
         prototype: HTMLIpAppRootElement;
         new (): HTMLIpAppRootElement;
+    };
+    interface HTMLIpAppVoordelenElement extends Components.IpAppVoordelen, HTMLStencilElement {
+    }
+    var HTMLIpAppVoordelenElement: {
+        prototype: HTMLIpAppVoordelenElement;
+        new (): HTMLIpAppVoordelenElement;
     };
     interface HTMLIpStencilRouteListenerElement extends Components.IpStencilRouteListener, HTMLStencilElement {
     }
@@ -43,18 +104,44 @@ declare global {
         new (): HTMLIpStencilRouteListenerElement;
     };
     interface HTMLElementTagNameMap {
+        "app-header": HTMLAppHeaderElement;
+        "gl-background-video": HTMLGlBackgroundVideoElement;
+        "ip-app-aanmelden": HTMLIpAppAanmeldenElement;
         "ip-app-about": HTMLIpAppAboutElement;
+        "ip-app-faq": HTMLIpAppFaqElement;
+        "ip-app-hoe": HTMLIpAppHoeElement;
         "ip-app-home": HTMLIpAppHomeElement;
+        "ip-app-onze-wijnhuizen": HTMLIpAppOnzeWijnhuizenElement;
         "ip-app-root": HTMLIpAppRootElement;
+        "ip-app-voordelen": HTMLIpAppVoordelenElement;
         "ip-stencil-route-listener": HTMLIpStencilRouteListenerElement;
     }
 }
 declare namespace LocalJSX {
+    interface AppHeader {
+        "signOut"?: any;
+        "user"?: any;
+    }
+    interface GlBackgroundVideo {
+        "muted"?: boolean;
+        "poster"?: string;
+        "src"?: string;
+    }
+    interface IpAppAanmelden {
+    }
     interface IpAppAbout {
+    }
+    interface IpAppFaq {
+    }
+    interface IpAppHoe {
     }
     interface IpAppHome {
     }
+    interface IpAppOnzeWijnhuizen {
+    }
     interface IpAppRoot {
+    }
+    interface IpAppVoordelen {
     }
     interface IpStencilRouteListener {
         "onPageEnter"?: (event: CustomEvent<LocationSegments>) => void;
@@ -62,9 +149,16 @@ declare namespace LocalJSX {
         "props"?: RouteRenderProps | undefined;
     }
     interface IntrinsicElements {
+        "app-header": AppHeader;
+        "gl-background-video": GlBackgroundVideo;
+        "ip-app-aanmelden": IpAppAanmelden;
         "ip-app-about": IpAppAbout;
+        "ip-app-faq": IpAppFaq;
+        "ip-app-hoe": IpAppHoe;
         "ip-app-home": IpAppHome;
+        "ip-app-onze-wijnhuizen": IpAppOnzeWijnhuizen;
         "ip-app-root": IpAppRoot;
+        "ip-app-voordelen": IpAppVoordelen;
         "ip-stencil-route-listener": IpStencilRouteListener;
     }
 }
@@ -72,9 +166,16 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "app-header": LocalJSX.AppHeader & JSXBase.HTMLAttributes<HTMLAppHeaderElement>;
+            "gl-background-video": LocalJSX.GlBackgroundVideo & JSXBase.HTMLAttributes<HTMLGlBackgroundVideoElement>;
+            "ip-app-aanmelden": LocalJSX.IpAppAanmelden & JSXBase.HTMLAttributes<HTMLIpAppAanmeldenElement>;
             "ip-app-about": LocalJSX.IpAppAbout & JSXBase.HTMLAttributes<HTMLIpAppAboutElement>;
+            "ip-app-faq": LocalJSX.IpAppFaq & JSXBase.HTMLAttributes<HTMLIpAppFaqElement>;
+            "ip-app-hoe": LocalJSX.IpAppHoe & JSXBase.HTMLAttributes<HTMLIpAppHoeElement>;
             "ip-app-home": LocalJSX.IpAppHome & JSXBase.HTMLAttributes<HTMLIpAppHomeElement>;
+            "ip-app-onze-wijnhuizen": LocalJSX.IpAppOnzeWijnhuizen & JSXBase.HTMLAttributes<HTMLIpAppOnzeWijnhuizenElement>;
             "ip-app-root": LocalJSX.IpAppRoot & JSXBase.HTMLAttributes<HTMLIpAppRootElement>;
+            "ip-app-voordelen": LocalJSX.IpAppVoordelen & JSXBase.HTMLAttributes<HTMLIpAppVoordelenElement>;
             "ip-stencil-route-listener": LocalJSX.IpStencilRouteListener & JSXBase.HTMLAttributes<HTMLIpStencilRouteListenerElement>;
         }
     }

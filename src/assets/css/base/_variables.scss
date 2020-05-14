@@ -1,0 +1,64 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// standard sizing
+$base-spacing: 30px;
+
+$spacings: (
+  0: 0,
+  1: ($base-spacing * .333),
+  2: ($base-spacing * .666),
+  3: $base-spacing,
+  4: ($base-spacing * 2),
+  5: ($base-spacing * 3),
+  6: ($base-spacing * 6)
+) !default;
+
+$half-spacing: map-get($spacings, 1);
+$double-spacing: map-get($spacings, 4);
+
+// grid gutter size / 2 > size in between components / 2
+$grid-spacing: $half-spacing;
+$grid-spacing--spacious: (map-get($spacings, 5) / 2) !default;
+
+// grid side-spacing > at the side of the grid - $grid-spacing
+$grid-side-spacing: $half-spacing;
+$grid-side-spacing--desktop: 30px; // + $grid-spacing = 40px
+
+// Breakpoints
+$bp-larger-than-mobile    : "min-width: 320px" !default;
+$bp-larger-than-phablet   : "min-width: 550px" !default;
+$bp-larger-than-tablet    : "min-width: 768px" !default;
+$bp-larger-than-desktop   : "min-width: 1024px" !default;
+$bp-larger-than-desktophd : "min-width: 1280px" !default;
+
+$breakpoints: (
+  'XS':	320px,
+  'S':	550px,
+  'M':	768px,
+  'L':  1024px,
+  'XL': 1280px
+) !default;
+
+// Colors
+$light-grey: #e1e1e1 !default;
+$dark-grey: #333 !default;
+$primary-color: #17395C !default;
+$secondary-color: lighten($dark-grey, 13.5%) !default;
+$border-color: #bbb !default;
+$link-color: #1eaedb !default;
+$font-color: #222 !default;
+
+// Typography
+$font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+//Grid Variables
+$container-width: 1280px !default;
+$container-width-larger-than-mobile: 85% !default;
+$container-width-larger-than-phablet: 80% !default;
+$total-columns: 12 !default;
+$column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
+$column-margin: 1% !default; // space between columns
+
+// Misc
+$global-radius: 4px !default;
