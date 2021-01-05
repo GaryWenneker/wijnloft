@@ -13,6 +13,7 @@ export class IpAppAanmelden {
             <h1>Aanmelden</h1>
 
             <div class="container">
+              
               <div id="mc_embed_signup">
                 <form action="https://koesveld.us7.list-manage.com/subscribe/post?u=2a91a33d2ac968f3cba847e84&amp;id=dd9cbbad75" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                   <div id="mc_embed_signup_scroll">

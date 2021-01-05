@@ -22,9 +22,14 @@ export namespace Components {
     }
     interface IpAppFaq {
     }
+    interface IpAppFooter {
+        "backgroundColor": string;
+        "margin": string;
+    }
     interface IpAppHoe {
     }
     interface IpAppHome {
+        "data": any[];
     }
     interface IpAppOnzeWijnhuizen {
     }
@@ -32,8 +37,58 @@ export namespace Components {
     }
     interface IpAppVoordelen {
     }
+    interface IpContentBlock {
+        "backgroundColor": string;
+        "margin": string;
+    }
     interface IpStencilRouteListener {
         "props": RouteRenderProps | undefined;
+    }
+    interface IpUspCounter {
+        "backgroundColor": string;
+        "count": string;
+        "margin": string;
+    }
+    interface IpWineBlock {
+        "intro": string;
+        "title": string;
+    }
+    interface WebAccordion {
+        /**
+          * close an accordion item
+          * @param index
+         */
+        "close": (index: number) => Promise<void>;
+        /**
+          * Open an accordion item
+          * @param index
+         */
+        "open": (index: number) => Promise<void>;
+    }
+    interface WebAccordionItem {
+        /**
+          * close the accordion item
+         */
+        "closeItem": () => Promise<void>;
+        /**
+          * index of accordion item from top to bottom
+         */
+        "index": number;
+        /**
+          * The mutation observer config to listen for content changes in the accordion item
+         */
+        "mutationObserverConfig": {
+            childList: boolean;
+            subtree: boolean;
+        };
+        /**
+          * accordion item is open or opening (css transition)
+         */
+        "open": boolean;
+        /**
+          * open the accordion item
+         */
+        "openItem": () => Promise<void>;
     }
 }
 declare global {
@@ -67,6 +122,12 @@ declare global {
         prototype: HTMLIpAppFaqElement;
         new (): HTMLIpAppFaqElement;
     };
+    interface HTMLIpAppFooterElement extends Components.IpAppFooter, HTMLStencilElement {
+    }
+    var HTMLIpAppFooterElement: {
+        prototype: HTMLIpAppFooterElement;
+        new (): HTMLIpAppFooterElement;
+    };
     interface HTMLIpAppHoeElement extends Components.IpAppHoe, HTMLStencilElement {
     }
     var HTMLIpAppHoeElement: {
@@ -97,11 +158,41 @@ declare global {
         prototype: HTMLIpAppVoordelenElement;
         new (): HTMLIpAppVoordelenElement;
     };
+    interface HTMLIpContentBlockElement extends Components.IpContentBlock, HTMLStencilElement {
+    }
+    var HTMLIpContentBlockElement: {
+        prototype: HTMLIpContentBlockElement;
+        new (): HTMLIpContentBlockElement;
+    };
     interface HTMLIpStencilRouteListenerElement extends Components.IpStencilRouteListener, HTMLStencilElement {
     }
     var HTMLIpStencilRouteListenerElement: {
         prototype: HTMLIpStencilRouteListenerElement;
         new (): HTMLIpStencilRouteListenerElement;
+    };
+    interface HTMLIpUspCounterElement extends Components.IpUspCounter, HTMLStencilElement {
+    }
+    var HTMLIpUspCounterElement: {
+        prototype: HTMLIpUspCounterElement;
+        new (): HTMLIpUspCounterElement;
+    };
+    interface HTMLIpWineBlockElement extends Components.IpWineBlock, HTMLStencilElement {
+    }
+    var HTMLIpWineBlockElement: {
+        prototype: HTMLIpWineBlockElement;
+        new (): HTMLIpWineBlockElement;
+    };
+    interface HTMLWebAccordionElement extends Components.WebAccordion, HTMLStencilElement {
+    }
+    var HTMLWebAccordionElement: {
+        prototype: HTMLWebAccordionElement;
+        new (): HTMLWebAccordionElement;
+    };
+    interface HTMLWebAccordionItemElement extends Components.WebAccordionItem, HTMLStencilElement {
+    }
+    var HTMLWebAccordionItemElement: {
+        prototype: HTMLWebAccordionItemElement;
+        new (): HTMLWebAccordionItemElement;
     };
     interface HTMLElementTagNameMap {
         "app-header": HTMLAppHeaderElement;
@@ -109,12 +200,18 @@ declare global {
         "ip-app-aanmelden": HTMLIpAppAanmeldenElement;
         "ip-app-about": HTMLIpAppAboutElement;
         "ip-app-faq": HTMLIpAppFaqElement;
+        "ip-app-footer": HTMLIpAppFooterElement;
         "ip-app-hoe": HTMLIpAppHoeElement;
         "ip-app-home": HTMLIpAppHomeElement;
         "ip-app-onze-wijnhuizen": HTMLIpAppOnzeWijnhuizenElement;
         "ip-app-root": HTMLIpAppRootElement;
         "ip-app-voordelen": HTMLIpAppVoordelenElement;
+        "ip-content-block": HTMLIpContentBlockElement;
         "ip-stencil-route-listener": HTMLIpStencilRouteListenerElement;
+        "ip-usp-counter": HTMLIpUspCounterElement;
+        "ip-wine-block": HTMLIpWineBlockElement;
+        "web-accordion": HTMLWebAccordionElement;
+        "web-accordion-item": HTMLWebAccordionItemElement;
     }
 }
 declare namespace LocalJSX {
@@ -133,9 +230,14 @@ declare namespace LocalJSX {
     }
     interface IpAppFaq {
     }
+    interface IpAppFooter {
+        "backgroundColor"?: string;
+        "margin"?: string;
+    }
     interface IpAppHoe {
     }
     interface IpAppHome {
+        "data"?: any[];
     }
     interface IpAppOnzeWijnhuizen {
     }
@@ -143,10 +245,50 @@ declare namespace LocalJSX {
     }
     interface IpAppVoordelen {
     }
+    interface IpContentBlock {
+        "backgroundColor"?: string;
+        "margin"?: string;
+    }
     interface IpStencilRouteListener {
         "onPageEnter"?: (event: CustomEvent<LocationSegments>) => void;
         "onPageLeave"?: (event: CustomEvent<LocationSegments>) => void;
         "props"?: RouteRenderProps | undefined;
+    }
+    interface IpUspCounter {
+        "backgroundColor"?: string;
+        "count"?: string;
+        "margin"?: string;
+    }
+    interface IpWineBlock {
+        "intro"?: string;
+        "title"?: string;
+    }
+    interface WebAccordion {
+    }
+    interface WebAccordionItem {
+        /**
+          * index of accordion item from top to bottom
+         */
+        "index"?: number;
+        /**
+          * The mutation observer config to listen for content changes in the accordion item
+         */
+        "mutationObserverConfig"?: {
+            childList: boolean;
+            subtree: boolean;
+        };
+        /**
+          * triggered when the content of the accordion item changes
+         */
+        "onContentChanged"?: (event: CustomEvent<any>) => void;
+        /**
+          * triggered when the accordion item is opened
+         */
+        "onOpenEvent"?: (event: CustomEvent<any>) => void;
+        /**
+          * accordion item is open or opening (css transition)
+         */
+        "open"?: boolean;
     }
     interface IntrinsicElements {
         "app-header": AppHeader;
@@ -154,12 +296,18 @@ declare namespace LocalJSX {
         "ip-app-aanmelden": IpAppAanmelden;
         "ip-app-about": IpAppAbout;
         "ip-app-faq": IpAppFaq;
+        "ip-app-footer": IpAppFooter;
         "ip-app-hoe": IpAppHoe;
         "ip-app-home": IpAppHome;
         "ip-app-onze-wijnhuizen": IpAppOnzeWijnhuizen;
         "ip-app-root": IpAppRoot;
         "ip-app-voordelen": IpAppVoordelen;
+        "ip-content-block": IpContentBlock;
         "ip-stencil-route-listener": IpStencilRouteListener;
+        "ip-usp-counter": IpUspCounter;
+        "ip-wine-block": IpWineBlock;
+        "web-accordion": WebAccordion;
+        "web-accordion-item": WebAccordionItem;
     }
 }
 export { LocalJSX as JSX };
@@ -171,12 +319,18 @@ declare module "@stencil/core" {
             "ip-app-aanmelden": LocalJSX.IpAppAanmelden & JSXBase.HTMLAttributes<HTMLIpAppAanmeldenElement>;
             "ip-app-about": LocalJSX.IpAppAbout & JSXBase.HTMLAttributes<HTMLIpAppAboutElement>;
             "ip-app-faq": LocalJSX.IpAppFaq & JSXBase.HTMLAttributes<HTMLIpAppFaqElement>;
+            "ip-app-footer": LocalJSX.IpAppFooter & JSXBase.HTMLAttributes<HTMLIpAppFooterElement>;
             "ip-app-hoe": LocalJSX.IpAppHoe & JSXBase.HTMLAttributes<HTMLIpAppHoeElement>;
             "ip-app-home": LocalJSX.IpAppHome & JSXBase.HTMLAttributes<HTMLIpAppHomeElement>;
             "ip-app-onze-wijnhuizen": LocalJSX.IpAppOnzeWijnhuizen & JSXBase.HTMLAttributes<HTMLIpAppOnzeWijnhuizenElement>;
             "ip-app-root": LocalJSX.IpAppRoot & JSXBase.HTMLAttributes<HTMLIpAppRootElement>;
             "ip-app-voordelen": LocalJSX.IpAppVoordelen & JSXBase.HTMLAttributes<HTMLIpAppVoordelenElement>;
+            "ip-content-block": LocalJSX.IpContentBlock & JSXBase.HTMLAttributes<HTMLIpContentBlockElement>;
             "ip-stencil-route-listener": LocalJSX.IpStencilRouteListener & JSXBase.HTMLAttributes<HTMLIpStencilRouteListenerElement>;
+            "ip-usp-counter": LocalJSX.IpUspCounter & JSXBase.HTMLAttributes<HTMLIpUspCounterElement>;
+            "ip-wine-block": LocalJSX.IpWineBlock & JSXBase.HTMLAttributes<HTMLIpWineBlockElement>;
+            "web-accordion": LocalJSX.WebAccordion & JSXBase.HTMLAttributes<HTMLWebAccordionElement>;
+            "web-accordion-item": LocalJSX.WebAccordionItem & JSXBase.HTMLAttributes<HTMLWebAccordionItemElement>;
         }
     }
 }

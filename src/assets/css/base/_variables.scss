@@ -49,6 +49,252 @@ $border-color: #bbb !default;
 $link-color: #1eaedb !default;
 $font-color: #222 !default;
 
+/**** Colors ****/
+$brand-neutral-0: #fffefa;
+$brand-neutral-1: #f2efe3;
+$brand-neutral-10: #807652;
+$brand-neutral-2: #e1dcc9;
+$brand-neutral-3: #d6cfb2;
+$brand-neutral-4: #c5bd9b;
+$brand-neutral-5: #b1a883;
+$brand-neutral-6: #9e9470;
+$brand-neutral-7: #8e8561;
+$brand-neutral-8: #857c58;
+$brand-neutral-9: #807753;
+$brand-primary-0: #f5faff;
+$brand-primary-1: #cae1f9;
+$brand-primary-10: #17395c;
+$brand-primary-2: #a0c6ed;
+$brand-primary-3: #79aadc;
+$brand-primary-4: #598fc6;
+$brand-primary-5: #4075ac;
+$brand-primary-6: #2e6092;
+$brand-primary-7: #234f7d;
+$brand-primary-8: #1c446d;
+$brand-primary-9: #193d63;
+$brand-secondary-0: #fff7f2;
+$brand-secondary-1: #fcebe0;
+$brand-secondary-10: #805c42;
+$brand-secondary-2: #f5dccb;
+$brand-secondary-3: #e7c8b3;
+$brand-secondary-4: #d4b199;
+$brand-secondary-5: #be9a81;
+$brand-secondary-6: #a8846b;
+$brand-secondary-7: #96735b;
+$brand-secondary-8: #8a674f;
+$brand-secondary-9: #836047;
+$gray-scale-0: #ffffff;
+$gray-scale-1: #f8fafb;
+$gray-scale-10: #0d0d0d;
+$gray-scale-2: #e9ecee;
+$gray-scale-3: #cfd4d7;
+$gray-scale-4: #acb1b4;
+$gray-scale-5: #83878b;
+$gray-scale-6: #5c6063;
+$gray-scale-7: #3c3d3f;
+$gray-scale-8: #242525;
+$gray-scale-9: #151515;
+
+/**** Fonts ****/
+/** extra-large **/
+$extra-large-font-family: 'Lato', 'Lato-Regular';
+$extra-large-font-size: 20px;
+$extra-large-letter-spacing: 0px;
+$extra-large-line-height: 24px;
+$extra-large-font-weight: 400;
+$extra-large-color: black;
+
+@mixin extra-large() {
+  font-family: $extra-large-font-family;
+  font-size: $extra-large-font-size;
+  letter-spacing: $extra-large-letter-spacing;
+  line-height: $extra-large-line-height;
+  font-weight: $extra-large-font-weight;
+  color: $extra-large-color;
+}
+/** h1 **/
+$h1-font-family: 'Playfair Display', 'PlayfairDisplay-Regular_Bold';
+$h1-font-size: 48px;
+$h1-letter-spacing: 0px;
+$h1-line-height: 56px;
+$h1-font-weight: 700;
+$h1-color: black;
+
+@mixin h1() {
+  font-family: $h1-font-family;
+  font-size: $h1-font-size;
+  letter-spacing: $h1-letter-spacing;
+  line-height: $h1-line-height;
+  font-weight: $h1-font-weight;
+  color: $h1-color;
+}
+/** h2 **/
+$h2-font-family: 'Playfair Display', 'PlayfairDisplay-Regular_Bold';
+$h2-font-size: 40px;
+$h2-letter-spacing: 0px;
+$h2-line-height: 48px;
+$h2-font-weight: 700;
+$h2-color: black;
+
+@mixin h2() {
+  font-family: $h2-font-family;
+  font-size: $h2-font-size;
+  letter-spacing: $h2-letter-spacing;
+  line-height: $h2-line-height;
+  font-weight: $h2-font-weight;
+  color: $h2-color;
+}
+/** label **/
+$label-font-family: 'Lato', 'Lato-Regular';
+$label-font-size: 16px;
+$label-letter-spacing: 0px;
+$label-line-height: 20px;
+$label-font-weight: 400;
+$label-color: black;
+
+@mixin label() {
+  font-family: $label-font-family;
+  font-size: $label-font-size;
+  letter-spacing: $label-letter-spacing;
+  line-height: $label-line-height;
+  font-weight: $label-font-weight;
+  color: $label-color;
+}
+/** label-bold **/
+$label-bold-font-family: 'Lato', 'Lato-Bold';
+$label-bold-font-size: 16px;
+$label-bold-letter-spacing: 0px;
+$label-bold-line-height: 20px;
+$label-bold-font-weight: 700;
+$label-bold-color: black;
+
+@mixin label-bold() {
+  font-family: $label-bold-font-family;
+  font-size: $label-bold-font-size;
+  letter-spacing: $label-bold-letter-spacing;
+  line-height: $label-bold-line-height;
+  font-weight: $label-bold-font-weight;
+  color: $label-bold-color;
+}
+/** label-large **/
+$label-large-font-family: 'Lato', 'Lato-Regular';
+$label-large-font-size: 24px;
+$label-large-letter-spacing: 0px;
+$label-large-line-height: 28px;
+$label-large-font-weight: 400;
+$label-large-color: black;
+
+@mixin label-large() {
+  font-family: $label-large-font-family;
+  font-size: $label-large-font-size;
+  letter-spacing: $label-large-letter-spacing;
+  line-height: $label-large-line-height;
+  font-weight: $label-large-font-weight;
+  color: $label-large-color;
+}
+/** label-large-bold **/
+$label-large-bold-font-family: 'Lato', 'Lato-Bold';
+$label-large-bold-font-size: 24px;
+$label-large-bold-letter-spacing: 0px;
+$label-large-bold-line-height: 28px;
+$label-large-bold-font-weight: 700;
+$label-large-bold-color: black;
+
+@mixin label-large-bold() {
+  font-family: $label-large-bold-font-family;
+  font-size: $label-large-bold-font-size;
+  letter-spacing: $label-large-bold-letter-spacing;
+  line-height: $label-large-bold-line-height;
+  font-weight: $label-large-bold-font-weight;
+  color: $label-large-bold-color;
+}
+/** label-large-underline **/
+$label-large-underline-font-family: 'Lato', 'Lato-Regular';
+$label-large-underline-font-size: 24px;
+$label-large-underline-letter-spacing: 0px;
+$label-large-underline-line-height: 28px;
+$label-large-underline-font-weight: 400;
+$label-large-underline-text-decoration: underline;
+$label-large-underline-color: black;
+
+@mixin label-large-underline() {
+  font-family: $label-large-underline-font-family;
+  font-size: $label-large-underline-font-size;
+  letter-spacing: $label-large-underline-letter-spacing;
+  line-height: $label-large-underline-line-height;
+  font-weight: $label-large-underline-font-weight;
+  text-decoration: $label-large-underline-text-decoration;
+  color: $label-large-underline-color;
+}
+/** label-underline **/
+$label-underline-font-family: 'Lato', 'Lato-Regular';
+$label-underline-font-size: 16px;
+$label-underline-letter-spacing: 0px;
+$label-underline-line-height: 20px;
+$label-underline-font-weight: 400;
+$label-underline-text-decoration: underline;
+$label-underline-color: black;
+
+@mixin label-underline() {
+  font-family: $label-underline-font-family;
+  font-size: $label-underline-font-size;
+  letter-spacing: $label-underline-letter-spacing;
+  line-height: $label-underline-line-height;
+  font-weight: $label-underline-font-weight;
+  text-decoration: $label-underline-text-decoration;
+  color: $label-underline-color;
+}
+/** large **/
+$large-font-family: 'Lato', 'Lato-Regular';
+$large-font-size: 18px;
+$large-letter-spacing: 0px;
+$large-line-height: 24px;
+$large-font-weight: 400;
+$large-color: black;
+
+@mixin large() {
+  font-family: $large-font-family;
+  font-size: $large-font-size;
+  letter-spacing: $large-letter-spacing;
+  line-height: $large-line-height;
+  font-weight: $large-font-weight;
+  color: $large-color;
+}
+/** normal **/
+$normal-font-family: 'Lato', 'Lato-Regular';
+$normal-font-size: 16px;
+$normal-letter-spacing: 0px;
+$normal-line-height: 22px;
+$normal-font-weight: 400;
+$normal-color: black;
+
+@mixin normal() {
+  font-family: $normal-font-family;
+  font-size: $normal-font-size;
+  letter-spacing: $normal-letter-spacing;
+  line-height: $normal-line-height;
+  font-weight: $normal-font-weight;
+  color: $normal-color;
+}
+/** title **/
+$title-font-family: 'Playfair Display', 'PlayfairDisplay-Regular_Bold';
+$title-font-size: 68px;
+$title-letter-spacing: 0px;
+$title-line-height: 76px;
+$title-font-weight: 700;
+$title-color: black;
+
+@mixin title() {
+  font-family: $title-font-family;
+  font-size: $title-font-size;
+  letter-spacing: $title-letter-spacing;
+  line-height: $title-line-height;
+  font-weight: $title-font-weight;
+  color: $title-color;
+}
+
+
+
 // Typography
 $font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
@@ -58,7 +304,7 @@ $container-width-larger-than-mobile: 85% !default;
 $container-width-larger-than-phablet: 80% !default;
 $total-columns: 12 !default;
 $column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
-$column-margin: 1% !default; // space between columns
+$column-margin: 2.77% !default; // space between columns
 
 // Misc
 $global-radius: 4px !default;

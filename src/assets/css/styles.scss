@@ -3,12 +3,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@700&display=swap");
 
 @import "./skeleton";
+@import "./layout";
 @import "./navigation";
+@import "./wine";
 @import "./modules/header";
 @import './modules/home';
+@import './modules/accordion';
 
 .o-video {
   z-index: -100;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 .overlay {

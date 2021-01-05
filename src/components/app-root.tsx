@@ -69,19 +69,7 @@ export class IpAppRoot {
             />
           </stencil-route-switch>
         </stencil-router>
-
-        <div class="container">
-          <div class="row">
-            <div class="twelve column">
-              <ul>
-                {this.pageState.map(page => (
-                  <li>{page}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-
+        <ip-app-footer></ip-app-footer>
       </main>
     );
   }
