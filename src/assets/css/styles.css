@@ -758,13 +758,19 @@ form {
   position: relative;
   z-index: 10;
   display: flex;
-  height: 304px;
+  min-height: 300px;
   flex: none;
   order: 5;
   align-self: stretch;
   flex-grow: 0;
   margin: 0px 0px;
-  background: #f2efe3; }
+  background: #f2efe3;
+  padding-bottom: 42px; }
+
+@media only screen and (min-width: 768px) {
+  .o-footer {
+    min-height: 280px;
+    padding-bottom: 0px; } }
 
 nav {
   /* Change the link color to #111 (black) on hover */ }
@@ -1001,9 +1007,6 @@ nav li a:hover {
   max-width: 500px;
   margin: 10px auto; }
 
-.o-accordion section {
-  overflow: hidden; }
-
 .o-accordion web-accordion-item h1 {
   background: grey;
   margin: 0;
@@ -1013,9 +1016,6 @@ nav li a:hover {
 .o-accordion web-accordion-item div {
   background: lightgray;
   padding: 20px 10px; }
-
-.transitioning {
-  transition: height 0.35s ease; }
 
 .o-video {
   z-index: -100; }
