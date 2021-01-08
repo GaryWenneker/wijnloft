@@ -1,6 +1,5 @@
 // Buttons
 //––––––––––––––––––––––––––––––––––––––––––––––––––
-
 .btn-primary {
   text-decoration: none;
   text-shadow: none;
@@ -22,6 +21,11 @@
   &:hover {
     background: $brand-primary-6;
     text-decoration: underline;
+  }
+
+  ion-icon {
+    padding-left: map-get($spacings, 1);
+    color: $gray-scale-0;
   }
 }
 

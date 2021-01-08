@@ -62,7 +62,7 @@ export class IpAppHome {
           </div>
           <div class="row">
             <div class="one column">&nbsp;</div>
-            <div class="seven columns"><stencil-route-link url="/aanmelden"><div class="btn-primary">Aanmelden<span class="chevron right"></span></div></stencil-route-link></div>
+            <div class="seven columns"><stencil-route-link url="/aanmelden"><div class="btn-primary">Aanmelden<ion-icon name="chevron-forward"></ion-icon></div></stencil-route-link></div>
             <div class="two columns"></div>
           </div>
 

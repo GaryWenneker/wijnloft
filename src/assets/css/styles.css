@@ -446,6 +446,10 @@ a .btn-primary {
   background: #2e6092;
   text-decoration: underline; }
 
+.btn-primary ion-icon {
+  padding-left: 8px;
+  color: #ffffff; }
+
 .btn-ghost {
   text-decoration: none;
   text-shadow: none;
