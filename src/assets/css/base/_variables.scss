@@ -94,56 +94,11 @@ $gray-scale-6: #5c6063;
 $gray-scale-7: #3c3d3f;
 $gray-scale-8: #242525;
 $gray-scale-9: #151515;
+$gray-scale-9-40: rgba(21, 21, 21, 0.4);
+$gray-scale-9-60: rgba(13, 13, 13, 0.6);
+$image-overlay: rgba(13, 13, 13, 0.4);
 
 /**** Fonts ****/
-/** extra-large **/
-$extra-large-font-family: 'Lato', 'Lato-Regular';
-$extra-large-font-size: 20px;
-$extra-large-letter-spacing: 0px;
-$extra-large-line-height: 24px;
-$extra-large-font-weight: 400;
-$extra-large-color: black;
-
-@mixin extra-large() {
-  font-family: $extra-large-font-family;
-  font-size: $extra-large-font-size;
-  letter-spacing: $extra-large-letter-spacing;
-  line-height: $extra-large-line-height;
-  font-weight: $extra-large-font-weight;
-  color: $extra-large-color;
-}
-/** h1 **/
-$h1-font-family: 'Playfair Display', 'PlayfairDisplay-Regular_Bold';
-$h1-font-size: 48px;
-$h1-letter-spacing: 0px;
-$h1-line-height: 56px;
-$h1-font-weight: 700;
-$h1-color: black;
-
-@mixin h1() {
-  font-family: $h1-font-family;
-  font-size: $h1-font-size;
-  letter-spacing: $h1-letter-spacing;
-  line-height: $h1-line-height;
-  font-weight: $h1-font-weight;
-  color: $h1-color;
-}
-/** h2 **/
-$h2-font-family: 'Playfair Display', 'PlayfairDisplay-Regular_Bold';
-$h2-font-size: 40px;
-$h2-letter-spacing: 0px;
-$h2-line-height: 48px;
-$h2-font-weight: 700;
-$h2-color: black;
-
-@mixin h2() {
-  font-family: $h2-font-family;
-  font-size: $h2-font-size;
-  letter-spacing: $h2-letter-spacing;
-  line-height: $h2-line-height;
-  font-weight: $h2-font-weight;
-  color: $h2-color;
-}
 /** label **/
 $label-font-family: 'Lato', 'Lato-Regular';
 $label-font-size: 16px;
@@ -244,55 +199,102 @@ $label-underline-color: black;
   text-decoration: $label-underline-text-decoration;
   color: $label-underline-color;
 }
-/** large **/
-$large-font-family: 'Lato', 'Lato-Regular';
-$large-font-size: 18px;
-$large-letter-spacing: 0px;
-$large-line-height: 24px;
-$large-font-weight: 400;
-$large-color: black;
+/** heading-h1 **/
+$heading-h1-font-family: 'Playfair Display', 'PlayfairDisplay-Regular_Bold';
+$heading-h1-font-size: 48px;
+$heading-h1-letter-spacing: 0px;
+$heading-h1-line-height: 56px;
+$heading-h1-font-weight: 700;
+$heading-h1-color: black;
 
-@mixin large() {
-  font-family: $large-font-family;
-  font-size: $large-font-size;
-  letter-spacing: $large-letter-spacing;
-  line-height: $large-line-height;
-  font-weight: $large-font-weight;
-  color: $large-color;
+@mixin heading-h1() {
+  font-family: $heading-h1-font-family;
+  font-size: $heading-h1-font-size;
+  letter-spacing: $heading-h1-letter-spacing;
+  line-height: $heading-h1-line-height;
+  font-weight: $heading-h1-font-weight;
+  color: $heading-h1-color;
 }
-/** normal **/
-$normal-font-family: 'Lato', 'Lato-Regular';
-$normal-font-size: 16px;
-$normal-letter-spacing: 0px;
-$normal-line-height: 22px;
-$normal-font-weight: 400;
-$normal-color: black;
+/** heading-h2 **/
+$heading-h2-font-family: 'Playfair Display', 'PlayfairDisplay-Regular_Bold';
+$heading-h2-font-size: 40px;
+$heading-h2-letter-spacing: 0px;
+$heading-h2-line-height: 48px;
+$heading-h2-font-weight: 700;
+$heading-h2-color: black;
 
-@mixin normal() {
-  font-family: $normal-font-family;
-  font-size: $normal-font-size;
-  letter-spacing: $normal-letter-spacing;
-  line-height: $normal-line-height;
-  font-weight: $normal-font-weight;
-  color: $normal-color;
+@mixin heading-h2() {
+  font-family: $heading-h2-font-family;
+  font-size: $heading-h2-font-size;
+  letter-spacing: $heading-h2-letter-spacing;
+  line-height: $heading-h2-line-height;
+  font-weight: $heading-h2-font-weight;
+  color: $heading-h2-color;
 }
-/** title **/
-$title-font-family: 'Playfair Display', 'PlayfairDisplay-Regular_Bold';
-$title-font-size: 68px;
-$title-letter-spacing: 0px;
-$title-line-height: 76px;
-$title-font-weight: 700;
-$title-color: black;
+/** heading-title **/
+$heading-title-font-family: 'Playfair Display', 'PlayfairDisplay-Regular_Bold';
+$heading-title-font-size: 68px;
+$heading-title-letter-spacing: 0px;
+$heading-title-line-height: 76px;
+$heading-title-font-weight: 700;
+$heading-title-color: black;
 
-@mixin title() {
-  font-family: $title-font-family;
-  font-size: $title-font-size;
-  letter-spacing: $title-letter-spacing;
-  line-height: $title-line-height;
-  font-weight: $title-font-weight;
-  color: $title-color;
+@mixin heading-title() {
+  font-family: $heading-title-font-family;
+  font-size: $heading-title-font-size;
+  letter-spacing: $heading-title-letter-spacing;
+  line-height: $heading-title-line-height;
+  font-weight: $heading-title-font-weight;
+  color: $heading-title-color;
 }
+/** paragraph-extra-large **/
+$paragraph-extra-large-font-family: 'Lato', 'Lato-Regular';
+$paragraph-extra-large-font-size: 20px;
+$paragraph-extra-large-letter-spacing: 0px;
+$paragraph-extra-large-line-height: 24px;
+$paragraph-extra-large-font-weight: 400;
+$paragraph-extra-large-color: black;
 
+@mixin paragraph-extra-large() {
+  font-family: $paragraph-extra-large-font-family;
+  font-size: $paragraph-extra-large-font-size;
+  letter-spacing: $paragraph-extra-large-letter-spacing;
+  line-height: $paragraph-extra-large-line-height;
+  font-weight: $paragraph-extra-large-font-weight;
+  color: $paragraph-extra-large-color;
+}
+/** paragraph-large **/
+$paragraph-large-font-family: 'Lato', 'Lato-Regular';
+$paragraph-large-font-size: 18px;
+$paragraph-large-letter-spacing: 0px;
+$paragraph-large-line-height: 24px;
+$paragraph-large-font-weight: 400;
+$paragraph-large-color: black;
+
+@mixin paragraph-large() {
+  font-family: $paragraph-large-font-family;
+  font-size: $paragraph-large-font-size;
+  letter-spacing: $paragraph-large-letter-spacing;
+  line-height: $paragraph-large-line-height;
+  font-weight: $paragraph-large-font-weight;
+  color: $paragraph-large-color;
+}
+/** paragraph-standard **/
+$paragraph-standard-font-family: 'Lato', 'Lato-Regular';
+$paragraph-standard-font-size: 16px;
+$paragraph-standard-letter-spacing: 0px;
+$paragraph-standard-line-height: 22px;
+$paragraph-standard-font-weight: 400;
+$paragraph-standard-color: black;
+
+@mixin paragraph-standard() {
+  font-family: $paragraph-standard-font-family;
+  font-size: $paragraph-standard-font-size;
+  letter-spacing: $paragraph-standard-letter-spacing;
+  line-height: $paragraph-standard-line-height;
+  font-weight: $paragraph-standard-font-weight;
+  color: $paragraph-standard-color;
+}
 
 
 // Typography
