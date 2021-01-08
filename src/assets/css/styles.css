@@ -427,16 +427,16 @@ p {
   flex-direction: row;
   align-items: center;
   padding: 16px 24px;
-  padding-right: 27px;
   width: fit-content;
   background-color: #17395c;
   border-radius: 2px;
-  color: white;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: normal;
+  font-family: "Lato", "Lato-Regular";
   font-size: 16px;
+  letter-spacing: 0px;
   line-height: 20px;
+  font-weight: 400;
+  color: black;
+  color: #ffffff;
   transition: background-color 300ms linear; }
 
 a .btn-primary {
@@ -454,7 +454,6 @@ a .btn-primary {
   flex-direction: row;
   align-items: center;
   padding: 16px 24px;
-  padding-right: 27px;
   width: fit-content;
   background-color: rgba(21, 21, 21, 0.4);
   border-radius: 2px;
@@ -465,7 +464,7 @@ a .btn-primary {
   font-weight: 400;
   color: black;
   color: #ffffff;
-  transition: background-color 500ms linear; }
+  transition: background-color 300ms linear; }
 
 a .btn-ghost {
   text-decoration: none; }
@@ -911,7 +910,7 @@ nav li a {
   .o-page-header__col {
     display: flex;
     align-items: center;
-    padding: 20px 19.98px; } }
+    padding: 20px 16px; } }
 
 .o-page-header__inner-wrap {
   display: flex;
@@ -1008,13 +1007,32 @@ nav li a {
 .home-intro {
   margin-top: 0px; }
 
+.home-intro .title h1 {
+  font-family: "Playfair Display", "PlayfairDisplay-Regular_Bold";
+  font-size: 32px;
+  letter-spacing: 0px;
+  line-height: 40px;
+  font-weight: 700;
+  color: black;
+  color: #ffffff; }
+
+@media only screen and (min-width: 1024px) {
+  .home-intro .title h1 {
+    font-family: "Playfair Display", "PlayfairDisplay-Regular_Bold";
+    font-size: 68px;
+    letter-spacing: 0px;
+    line-height: 76px;
+    font-weight: 700;
+    color: black;
+    color: #ffffff; } }
+
 @media only screen and (min-width: 768px) {
   .home-intro {
     margin-top: 80px; } }
 
 @media only screen and (min-width: 1024px) {
   .home-intro {
-    margin-top: 240px; } }
+    padding: 104px 0px; } }
 
 .o-accordion {
   max-width: 500px;

@@ -8,17 +8,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 16px 24px;
-  padding-right: 27px;
+  padding: map-get($spacings, 2) map-get($spacings, 3);
   width: fit-content;
-  background-color: #17395c;
+  background-color: $brand-primary-10;
   border-radius: 2px;
-  color: white;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  @include label-standard;
+  color: $gray-scale-0;
   transition: background-color 300ms linear;
   a & {
     // color: transparent;
@@ -37,14 +32,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 16px 24px;
-  padding-right: 27px;
+  padding: map-get($spacings, 2) map-get($spacings, 3);
   width: fit-content;
   background-color: $gray-scale-9-40;
   border-radius: 2px;
   @include label-standard;
   color: $gray-scale-0;
-  transition: background-color 500ms linear;
+  transition: background-color 300ms linear;
   a & {
     // color: transparent;
     text-decoration: none;
