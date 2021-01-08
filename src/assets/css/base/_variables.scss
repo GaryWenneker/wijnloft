@@ -2,16 +2,23 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // standard sizing
-$base-spacing: 30px;
+$base-spacing: 8px;
 
 $spacings: (
   0: 0,
-  1: ($base-spacing * .333),
-  2: ($base-spacing * .666),
-  3: $base-spacing,
-  4: ($base-spacing * 2),
-  5: ($base-spacing * 3),
-  6: ($base-spacing * 6)
+  1: ($base-spacing * 1),
+  2: ($base-spacing * 2),
+  3: ($base-spacing * 3),
+  4: ($base-spacing * 4),
+  5: ($base-spacing * 5),
+  6: ($base-spacing * 6),
+  7: ($base-spacing * 7),
+  8: ($base-spacing * 8),
+  9: ($base-spacing * 9),
+  10: ($base-spacing * 10),
+  11: ($base-spacing * 11),
+  12: ($base-spacing * 12),
+  13: ($base-spacing * 13),
 ) !default;
 
 $half-spacing: map-get($spacings, 1);
@@ -23,7 +30,7 @@ $grid-spacing--spacious: (map-get($spacings, 5) / 2) !default;
 
 // grid side-spacing > at the side of the grid - $grid-spacing
 $grid-side-spacing: $half-spacing;
-$grid-side-spacing--desktop: 30px; // + $grid-spacing = 40px
+$grid-side-spacing--desktop: 32px; // + $grid-spacing = 40px
 
 // Breakpoints
 $bp-larger-than-mobile    : "min-width: 320px" !default;
