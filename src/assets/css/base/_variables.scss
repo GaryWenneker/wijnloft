@@ -99,38 +99,6 @@ $gray-scale-9-60: rgba(13, 13, 13, 0.6);
 $image-overlay: rgba(13, 13, 13, 0.4);
 
 /**** Fonts ****/
-/** label **/
-$label-font-family: 'Lato', 'Lato-Regular';
-$label-font-size: 16px;
-$label-letter-spacing: 0px;
-$label-line-height: 20px;
-$label-font-weight: 400;
-$label-color: black;
-
-@mixin label() {
-  font-family: $label-font-family;
-  font-size: $label-font-size;
-  letter-spacing: $label-letter-spacing;
-  line-height: $label-line-height;
-  font-weight: $label-font-weight;
-  color: $label-color;
-}
-/** label-bold **/
-$label-bold-font-family: 'Lato', 'Lato-Bold';
-$label-bold-font-size: 16px;
-$label-bold-letter-spacing: 0px;
-$label-bold-line-height: 20px;
-$label-bold-font-weight: 700;
-$label-bold-color: black;
-
-@mixin label-bold() {
-  font-family: $label-bold-font-family;
-  font-size: $label-bold-font-size;
-  letter-spacing: $label-bold-letter-spacing;
-  line-height: $label-bold-line-height;
-  font-weight: $label-bold-font-weight;
-  color: $label-bold-color;
-}
 /** label-large **/
 $label-large-font-family: 'Lato', 'Lato-Regular';
 $label-large-font-size: 24px;
@@ -181,24 +149,6 @@ $label-large-underline-color: black;
   text-decoration: $label-large-underline-text-decoration;
   color: $label-large-underline-color;
 }
-/** label-underline **/
-$label-underline-font-family: 'Lato', 'Lato-Regular';
-$label-underline-font-size: 16px;
-$label-underline-letter-spacing: 0px;
-$label-underline-line-height: 20px;
-$label-underline-font-weight: 400;
-$label-underline-text-decoration: underline;
-$label-underline-color: black;
-
-@mixin label-underline() {
-  font-family: $label-underline-font-family;
-  font-size: $label-underline-font-size;
-  letter-spacing: $label-underline-letter-spacing;
-  line-height: $label-underline-line-height;
-  font-weight: $label-underline-font-weight;
-  text-decoration: $label-underline-text-decoration;
-  color: $label-underline-color;
-}
 /** heading-h1 **/
 $heading-h1-font-family: 'Playfair Display', 'PlayfairDisplay-Regular_Bold';
 $heading-h1-font-size: 48px;
@@ -231,6 +181,22 @@ $heading-h2-color: black;
   font-weight: $heading-h2-font-weight;
   color: $heading-h2-color;
 }
+/** heading-h2-mobile **/
+$heading-h2-mobile-font-family: 'Playfair Display', 'PlayfairDisplay-Regular_Bold';
+$heading-h2-mobile-font-size: 32px;
+$heading-h2-mobile-letter-spacing: 0px;
+$heading-h2-mobile-line-height: 40px;
+$heading-h2-mobile-font-weight: 700;
+$heading-h2-mobile-color: black;
+
+@mixin heading-h2-mobile() {
+  font-family: $heading-h2-mobile-font-family;
+  font-size: $heading-h2-mobile-font-size;
+  letter-spacing: $heading-h2-mobile-letter-spacing;
+  line-height: $heading-h2-mobile-line-height;
+  font-weight: $heading-h2-mobile-font-weight;
+  color: $heading-h2-mobile-color;
+}
 /** heading-title **/
 $heading-title-font-family: 'Playfair Display', 'PlayfairDisplay-Regular_Bold';
 $heading-title-font-size: 68px;
@@ -246,6 +212,56 @@ $heading-title-color: black;
   line-height: $heading-title-line-height;
   font-weight: $heading-title-font-weight;
   color: $heading-title-color;
+}
+/** label-standard **/
+$label-standard-font-family: 'Lato', 'Lato-Regular';
+$label-standard-font-size: 16px;
+$label-standard-letter-spacing: 0px;
+$label-standard-line-height: 20px;
+$label-standard-font-weight: 400;
+$label-standard-color: black;
+
+@mixin label-standard() {
+  font-family: $label-standard-font-family;
+  font-size: $label-standard-font-size;
+  letter-spacing: $label-standard-letter-spacing;
+  line-height: $label-standard-line-height;
+  font-weight: $label-standard-font-weight;
+  color: $label-standard-color;
+}
+/** label-standard-bold **/
+$label-standard-bold-font-family: 'Lato', 'Lato-Bold';
+$label-standard-bold-font-size: 16px;
+$label-standard-bold-letter-spacing: 0px;
+$label-standard-bold-line-height: 20px;
+$label-standard-bold-font-weight: 700;
+$label-standard-bold-color: black;
+
+@mixin label-standard-bold() {
+  font-family: $label-standard-bold-font-family;
+  font-size: $label-standard-bold-font-size;
+  letter-spacing: $label-standard-bold-letter-spacing;
+  line-height: $label-standard-bold-line-height;
+  font-weight: $label-standard-bold-font-weight;
+  color: $label-standard-bold-color;
+}
+/** label-standard-underline **/
+$label-standard-underline-font-family: 'Lato', 'Lato-Regular';
+$label-standard-underline-font-size: 16px;
+$label-standard-underline-letter-spacing: 0px;
+$label-standard-underline-line-height: 20px;
+$label-standard-underline-font-weight: 400;
+$label-standard-underline-text-decoration: underline;
+$label-standard-underline-color: black;
+
+@mixin label-standard-underline() {
+  font-family: $label-standard-underline-font-family;
+  font-size: $label-standard-underline-font-size;
+  letter-spacing: $label-standard-underline-letter-spacing;
+  line-height: $label-standard-underline-line-height;
+  font-weight: $label-standard-underline-font-weight;
+  text-decoration: $label-standard-underline-text-decoration;
+  color: $label-standard-underline-color;
 }
 /** paragraph-extra-large **/
 $paragraph-extra-large-font-family: 'Lato', 'Lato-Regular';
@@ -295,6 +311,7 @@ $paragraph-standard-color: black;
   font-weight: $paragraph-standard-font-weight;
   color: $paragraph-standard-color;
 }
+
 
 
 // Typography
