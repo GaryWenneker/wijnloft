@@ -52,7 +52,7 @@ export class IpAppHome {
         <div class="container inverted text-shadow home-intro">
           <div class="row">
             <div class="one column">&nbsp;</div>
-            <div class="seven columns"><h1>Exclusieve wijnen voor u geselecteerd</h1></div>
+            <div class="seven columns title"><h1>Exclusieve wijnen voor u geselecteerd</h1></div>
             <div class="two columns"></div>
           </div>
           <div class="row">
