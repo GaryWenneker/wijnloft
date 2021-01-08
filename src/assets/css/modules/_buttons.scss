@@ -2,7 +2,7 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 .btn-primary {
-  text-decoration: none !important;
+  text-decoration: none;
   text-shadow: none;
   cursor: pointer;
   display: flex;
@@ -19,13 +19,14 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  transition: background-color 500ms linear;
+  transition: background-color 300ms linear;
   a & {
     // color: transparent;
     text-decoration: none;
   }
   &:hover {
-    background: lighten($color: #17395c, $amount: 20%);
+    background: $brand-primary-6;
+    text-decoration: underline;
   }
 }
 
