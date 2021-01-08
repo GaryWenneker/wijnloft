@@ -29,6 +29,31 @@
   }
 }
 
+.btn-ghost {
+  text-decoration: none !important;
+  text-shadow: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 24px;
+  padding-right: 27px;
+  width: fit-content;
+  background-color: $gray-scale-9-40;
+  border-radius: 2px;
+  @include label-standard;
+  color: $gray-scale-0;
+  transition: background-color 500ms linear;
+  a & {
+    // color: transparent;
+    text-decoration: none;
+  }
+  &:hover {
+    background: lighten($color: #17395c, $amount: 20%);
+  }
+}
+
+
 .button,
 button {
   display: inline-block;

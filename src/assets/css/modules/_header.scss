@@ -125,19 +125,7 @@
   }
 
   &__account__button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 16px 24px;
-    color: white;
-    position: static;
-    width: 139px;
-    height: 52px;
-    left: 0px;
-    top: 2px;
 
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 2px;
   }
 
   @include mq('XL') {
