@@ -60,18 +60,22 @@
     background-color: transparent !important;
 
     &__item {
+      display: flex;
       flex: none;
       order: 0;
       flex-grow: 0;
-      margin: 0px 0px;
-      @include label-standard;
-      padding: 0 8px;
+      // margin: 16px 0px;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 0 10px;
+      // padding-top: 18px;
+      align-items: center;
 
       a {
-          text-decoration: none;
-          &:hover {
-            text-decoration: underline;
-          }
+          text-decoration: none!important;
       }
     }
 
@@ -113,7 +117,7 @@
     @include mq('XL') {
       display: flex;
       align-items: center;
-      padding: 16px;
+      padding: 20px ($grid-spacing * 2);
     }
   }
 
@@ -124,7 +128,19 @@
   }
 
   &__account__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 24px;
+    color: white;
+    position: static;
+    width: 139px;
+    height: 52px;
+    left: 0px;
+    top: 2px;
 
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
   }
 
   @include mq('XL') {

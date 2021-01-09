@@ -24,7 +24,7 @@ export class Header {
                 <stencil-route-link url="/voordelen">Voordelen</stencil-route-link>
                 </li>
                 <li class="m-primary-navigation__item ">
-                <stencil-route-link url="/">LOGO</stencil-route-link>
+                <stencil-route-link url="/"><img src="/assets/logo/logo-white.svg" alt=""/></stencil-route-link>
                 </li>
                 <li class="m-primary-navigation__item ">
                   <stencil-route-link url="/onze-wijnhuizen">Onze wijnhuizen</stencil-route-link>
