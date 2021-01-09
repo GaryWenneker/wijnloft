@@ -65,10 +65,19 @@
       flex-grow: 0;
       margin: 0px 0px;
       @include label-standard;
-      padding: 0 8px;
+      padding: 0;
+
+      &__logo {
+        height: map-get($spacings, 7);
+
+        a {
+          padding: 0 map-get($spacings, 3);
+        }
+      }
 
       a {
           text-decoration: none;
+
           &:hover {
             text-decoration: underline;
           }
