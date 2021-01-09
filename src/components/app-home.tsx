@@ -27,10 +27,17 @@ export class IpAppHome {
 
       this.data = wines;
 
-
       console.log('all wines', wines);
 
     })
+
+    // force video to paste onto viewport
+    let elem = (document.compatMode === "CSS1Compat") ?
+        document.documentElement :
+        document.body;
+      let height = elem.clientHeight -200;
+      let item = document.getElementsByClassName('home-intro').item(0);
+      (item as any).style.height = `${height}px`;
   }
 
   @Watch('data')
