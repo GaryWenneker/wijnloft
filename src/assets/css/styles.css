@@ -1031,7 +1031,8 @@ nav li a {
     right: -5px; } }
 
 .home-intro {
-  margin-top: 0px; }
+  margin-top: 0px;
+  min-height: 800px; }
 
 .home-intro .title h1 {
   font-family: "Playfair Display", "PlayfairDisplay-Regular_Bold";
