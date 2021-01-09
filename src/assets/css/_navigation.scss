@@ -16,7 +16,7 @@ nav {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: map-get($spacings, 2) map-get($spacings, 1);
     text-decoration: none;
   }
 }

@@ -819,7 +819,7 @@ nav li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 8px;
   text-decoration: none; }
 
 .o-wine-block-item {
@@ -949,8 +949,16 @@ nav li a {
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  padding: 0 10px;
+  font-weight: 400;
+  color: black;
+  padding: 0; }
   align-items: center; }
+
+.o-page-header .m-primary-navigation__item__logo {
+  height: 56px; }
+
+.o-page-header .m-primary-navigation__item__logo a {
+  padding: 0 24px; }
 
 .o-page-header .m-primary-navigation__item a {
   text-decoration: none !important; }
