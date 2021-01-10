@@ -1101,7 +1101,8 @@ nav li a {
   line-height: 48px;
   font-weight: 700;
   color: black;
-  color: #151515; }
+  color: #151515;
+  margin-bottom: 16px; }
 
 .card p {
   font-family: "Lato", "Lato-Regular";
@@ -1126,19 +1127,6 @@ nav li a {
 @media only screen and (min-width: 1024px) {
   .card__signup {
     margin: 152px 0; } }
-
-.card__signup form {
-  z-index: 1; }
-
-.card__signup object {
-  width: 385px;
-  height: 385px;
-  position: absolute;
-  z-index: 0; }
-
-.card__signup object svg path {
-  stroke: #f2efe3;
-  fill: #f2efe3; }
 
 .o-video {
   z-index: -100; }

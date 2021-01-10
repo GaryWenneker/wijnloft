@@ -19,6 +19,13 @@ $spacings: (
   11: ($base-spacing * 11),
   12: ($base-spacing * 12),
   13: ($base-spacing * 13),
+  14: ($base-spacing * 14),
+  15: ($base-spacing * 15),
+  16: ($base-spacing * 16),
+  17: ($base-spacing * 17),
+  18: ($base-spacing * 18),
+  19: ($base-spacing * 19),
+  20: ($base-spacing * 20)
 ) !default;
 
 $half-spacing: map-get($spacings, 1);

@@ -12,6 +12,7 @@
     h2 {
         @include heading-h2;
         color: $gray-scale-9;
+        margin-bottom: map-get($spacings, 2);
     }
 
     p {
@@ -31,22 +32,6 @@
         }
         @include mq('L') {
             margin: 152px 0;
-        }
-
-        form {
-            z-index: 1;
-        }
-
-        object {
-            width: 385px;
-            height: 385px;
-            position: absolute;
-            z-index: 0;
-            
-            svg path {
-                stroke: $brand-neutral-1;
-                fill: $brand-neutral-1;
-            }
         }
     }
 }
