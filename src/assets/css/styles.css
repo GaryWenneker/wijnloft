@@ -498,30 +498,13 @@ button {
 
 input[type="submit"], input[type="reset"], input[type="button"] {
   display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: #555555;
-  text-align: center;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  text-decoration: none;
   white-space: nowrap;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbb;
+  border: 0;
   cursor: pointer;
   box-sizing: border-box; }
 
 .button:hover,
 button:hover {
-  color: #333;
-  border-color: #888888;
-  outline: 0; }
-
-input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
   color: #333;
   border-color: #888888;
   outline: 0; }
@@ -613,13 +596,32 @@ input[type='url'],
 input[type='password'],
 textarea,
 select {
-  height: 38px;
-  padding: 6px 10px;
-  background-color: #fff;
-  border: 1px solid #d1d1d1;
+  height: 52px;
+  padding: 16px;
+  background-color: #ffffff;
+  border: 1px solid #acb1b4;
   border-radius: 4px;
   box-shadow: none;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Lato", "Lato-Regular";
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  font-weight: 400;
+  color: black;
+  color: #242525; }
+
+input[type='email'].full-width,
+input[type='number'].full-width,
+input[type='search'].full-width,
+input[type='text'].full-width,
+input[type='tel'].full-width,
+input[type='url'].full-width,
+input[type='password'].full-width,
+textarea.full-width,
+select.full-width {
+  width: 100%;
+  max-width: 384px; }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
   -webkit-appearance: none;
@@ -635,12 +637,12 @@ textarea {
   padding-bottom: 6px; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
-  border: 1px solid #17395C;
+  border: 1px solid #5c6063;
   outline: 0; }
 
 textarea:focus,
 select:focus {
-  border: 1px solid #17395C;
+  border: 1px solid #5c6063;
   outline: 0; }
 
 label,
@@ -1031,8 +1033,7 @@ nav li a {
     right: -5px; } }
 
 .home-intro {
-  margin-top: 0px;
-  min-height: 800px; }
+  margin-top: 0px; }
 
 .home-intro .title h1 {
   font-family: "Playfair Display", "PlayfairDisplay-Regular_Bold";
@@ -1074,6 +1075,66 @@ nav li a {
 .o-accordion web-accordion-item div {
   background: lightgray;
   padding: 20px 10px; }
+
+.background__vineyard001 {
+  background: url(/assets/image/vineyard/001@1x.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.card {
+  background: #ffffff; }
+
+@media only screen and (min-width: 320px) {
+  .card {
+    padding: 24px; } }
+
+@media only screen and (min-width: 1024px) {
+  .card {
+    padding: 56px 104px; } }
+
+.card h2 {
+  font-family: "Playfair Display", "PlayfairDisplay-Regular_Bold";
+  font-size: 40px;
+  letter-spacing: 0px;
+  line-height: 48px;
+  font-weight: 700;
+  color: black;
+  color: #151515; }
+
+.card p {
+  font-family: "Lato", "Lato-Regular";
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 22px;
+  font-weight: 400;
+  color: black;
+  color: #151515;
+  margin-bottom: 24px; }
+
+.card__signup {
+  background: #FFF url(/assets/stamp/in-vino-veritas/001/half.svg);
+  background-size: 248px;
+  background-repeat: no-repeat;
+  background-position: center right; }
+
+@media only screen and (min-width: 1024px) {
+  .card__signup {
+    margin: 152px 0; } }
+
+.card__signup form {
+  z-index: 1; }
+
+.card__signup object {
+  width: 385px;
+  height: 385px;
+  position: absolute;
+  z-index: 0; }
+
+.card__signup object svg path {
+  stroke: #f2efe3;
+  fill: #f2efe3; }
 
 .o-video {
   z-index: -100; }
