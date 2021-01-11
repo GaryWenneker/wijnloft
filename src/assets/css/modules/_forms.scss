@@ -19,6 +19,7 @@ select {
   box-sizing: border-box;
   @include label-standard;
   color: $gray-scale-8;
+  margin-bottom: map-get($spacings, 2);
 
   &.full-width{
     width: 100%;
