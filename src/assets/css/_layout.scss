@@ -68,7 +68,11 @@
 	flex-grow: 0;
 	margin: 0px 0px;
     background: #f2efe3;
-    padding-bottom: 42px;
+	padding-bottom: 42px;
+	
+	.label-standard {
+		color: $gray-scale-9;
+	}
 
     @include mq('M') {
         min-height: 280px;

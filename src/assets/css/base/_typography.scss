@@ -24,6 +24,11 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0;       }
   h6 { font-size: 1.5rem; }
 }
 
-p {
+p, .paragraph-standard {
   margin-top: 0;
+  @include paragraph-standard;
+}
+
+.label-standard {
+  @include label-standard;
 }

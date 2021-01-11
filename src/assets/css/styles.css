@@ -295,8 +295,22 @@ h6 {
   h6 {
     font-size: 1.5rem; } }
 
-p {
-  margin-top: 0; }
+p, .paragraph-standard {
+  margin-top: 0;
+  font-family: "Lato", "Lato-Regular";
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 22px;
+  font-weight: 400;
+  color: black; }
+
+.label-standard {
+  font-family: "Lato", "Lato-Regular";
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  font-weight: 400;
+  color: black; }
 
 /* Modules */
 /*
@@ -802,6 +816,9 @@ form {
   background: #f2efe3;
   padding-bottom: 42px; }
 
+.o-footer .label-standard {
+  color: #151515; }
+
 @media only screen and (min-width: 768px) {
   .o-footer {
     min-height: 280px;
@@ -1053,7 +1070,12 @@ nav li a {
     line-height: 76px;
     font-weight: 700;
     color: black;
-    color: #ffffff; } }
+    color: #ffffff;
+    margin-bottom: 24px; } }
+
+.home-intro p {
+  color: #ffffff;
+  margin-bottom: 40px; }
 
 @media only screen and (min-width: 768px) {
   .home-intro {
