@@ -3,12 +3,14 @@
 	margin: 0px auto;
 	
 	web-accordion-item .title {
+		margin: 0 auto;
+		max-width: 592px;
 		@include label-standard-bold;
 		color: $gray-scale-8;
-		margin: 0;
 		padding: map-get($spacings, 3) map-get($spacings, 2) map-get($spacings, 1) map-get($spacings, 2);
 		cursor: pointer;
 		border-top: 1px solid $gray-scale-3;
+		background: transparent;
 
 		&:first-child {
 			padding: map-get($spacings, 2);
@@ -18,8 +20,11 @@
 		}
 	}
 	web-accordion-item .content {
+		margin: 0 auto;
+		max-width: 592px;
 		@include paragraph-standard;
 		color: $gray-scale-8;
 		padding: 0 map-get($spacings, 2) map-get($spacings, 2) map-get($spacings, 5);
+		background: transparent;
 	}
 }

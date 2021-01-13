@@ -1098,6 +1098,8 @@ nav li a {
   margin: 0px auto; }
 
 .o-accordion web-accordion-item .title {
+  margin: 0 auto;
+  max-width: 592px;
   font-family: "Lato", "Lato-Bold";
   font-size: 16px;
   letter-spacing: 0px;
@@ -1105,10 +1107,10 @@ nav li a {
   font-weight: 700;
   color: black;
   color: #242525;
-  margin: 0;
   padding: 24px 16px 8px 16px;
   cursor: pointer;
-  border-top: 1px solid #cfd4d7; }
+  border-top: 1px solid #cfd4d7;
+  background: transparent; }
 
 .o-accordion web-accordion-item .title:first-child {
   padding: 16px; }
@@ -1117,6 +1119,8 @@ nav li a {
   text-decoration: underline; }
 
 .o-accordion web-accordion-item .content {
+  margin: 0 auto;
+  max-width: 592px;
   font-family: "Lato", "Lato-Regular";
   font-size: 16px;
   letter-spacing: 0px;
@@ -1124,7 +1128,8 @@ nav li a {
   font-weight: 400;
   color: black;
   color: #242525;
-  padding: 0 16px 16px 40px; }
+  padding: 0 16px 16px 40px;
+  background: transparent; }
 
 .background__vineyard001 {
   background: url(/assets/image/vineyard/001@1x.jpg) no-repeat center center fixed;
