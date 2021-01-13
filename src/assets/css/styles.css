@@ -1113,7 +1113,7 @@ nav li a {
 .o-accordion web-accordion-item .title:first-child {
   padding: 16px; }
 
-.o-accordion web-accordion-item .title:hover {
+.o-accordion web-accordion-item .title:hover, .o-accordion web-accordion-item .title:focus {
   text-decoration: underline; }
 
 .o-accordion web-accordion-item .content {

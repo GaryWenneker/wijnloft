@@ -13,7 +13,7 @@
 		&:first-child {
 			padding: map-get($spacings, 2);
 		}
-		&:hover {
+		&:hover, &:focus {
 			text-decoration: underline;
 		}
 	}
