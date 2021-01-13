@@ -8,9 +8,13 @@
 		margin: 0;
 		padding: map-get($spacings, 3) map-get($spacings, 2) map-get($spacings, 1) map-get($spacings, 2);
 		cursor: pointer;
+		border-top: 1px solid $gray-scale-3;
 
 		&:first-child {
 			padding: map-get($spacings, 2);
+		}
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 	web-accordion-item .content {
