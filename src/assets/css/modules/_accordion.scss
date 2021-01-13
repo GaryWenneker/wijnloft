@@ -1,15 +1,21 @@
 .o-accordion {
-	max-width: 500px;
-	margin: 10px auto;
+	max-width: 592px;
+	margin: 0px auto;
 	
-	web-accordion-item h1 {
-		background: grey;
+	web-accordion-item .title {
+		@include label-standard-bold;
+		color: $gray-scale-8;
 		margin: 0;
-		padding: 10px;
+		padding: map-get($spacings, 3) map-get($spacings, 2) map-get($spacings, 1) map-get($spacings, 2);
 		cursor: pointer;
+
+		&:first-child {
+			padding: map-get($spacings, 2);
+		}
 	}
-	web-accordion-item div {
-		background: lightgray;
-		padding: 20px 10px;
+	web-accordion-item .content {
+		@include paragraph-standard;
+		color: $gray-scale-8;
+		padding: 0 map-get($spacings, 2) map-get($spacings, 2) map-get($spacings, 5);
 	}
 }
