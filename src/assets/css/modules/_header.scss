@@ -8,7 +8,7 @@
   cursor: pointer;
 
   &__col {
-    padding: 15px;
+    padding: ($grid-spacing * 2);
 
     &:nth-child(2) {
       // for getting the HelpButton behind PrimaryNavigation
@@ -23,7 +23,7 @@
     @include mq('XL') {
       display: flex;
       align-items: center;
-      padding: 20px ($grid-spacing * 2);
+      padding: ($grid-spacing * 2);
     }
   }
 
@@ -109,7 +109,7 @@
   }
 
   &__col {
-    padding: 15px;
+    padding: ($grid-spacing * 2);
 
     &:nth-child(2) {
       // for getting the HelpButton behind PrimaryNavigation
@@ -124,7 +124,7 @@
     @include mq('XL') {
       display: flex;
       align-items: center;
-      padding: 20px ($grid-spacing * 2);
+      padding: ($grid-spacing * 2);
     }
   }
 
