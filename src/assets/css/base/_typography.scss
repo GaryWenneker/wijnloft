@@ -31,4 +31,8 @@ p, .paragraph-standard {
 
 .label-standard {
   @include label-standard;
+
+  &__bold {
+    @include label-standard-bold;
+  }
 }

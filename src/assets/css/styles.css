@@ -312,6 +312,14 @@ p, .paragraph-standard {
   font-weight: 400;
   color: black; }
 
+.label-standard__bold {
+  font-family: "Lato", "Lato-Bold";
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  font-weight: 700;
+  color: black; }
+
 /* Modules */
 /*
 * Skeleton V2.0.4
@@ -761,22 +769,24 @@ form {
   .o-content-block {
     padding: 104px 0 104px 0; } }
 
-.o-content-block .title {
-  font-family: "Playfair Display";
+.o-content-block .title h2 {
+  font-family: "Playfair Display", "PlayfairDisplay-Regular_Bold";
+  font-size: 40px;
+  letter-spacing: 0px;
+  line-height: 48px;
+  font-weight: 700;
+  color: black;
   color: #242525;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px; }
+  margin-bottom: 24px; }
 
 .o-content-block .intro {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: normal;
+  font-family: "Lato", "Lato-Regular";
   font-size: 18px;
+  letter-spacing: 0px;
   line-height: 24px;
+  font-weight: 400;
+  color: black;
   color: #3c3d3f;
-  margin-top: 24px;
   margin-bottom: 32px; }
 
 .o-usp-counter .row {
@@ -1030,8 +1040,6 @@ nav li a {
   padding: 16px 24px;
   color: white;
   position: static;
-  width: 139px;
-  height: 52px;
   left: 0px;
   top: 2px;
   background: rgba(0, 0, 0, 0.6);
@@ -1086,18 +1094,33 @@ nav li a {
     padding: 104px 0px; } }
 
 .o-accordion {
-  max-width: 500px;
-  margin: 10px auto; }
+  max-width: 592px;
+  margin: 0px auto; }
 
-.o-accordion web-accordion-item h1 {
-  background: grey;
+.o-accordion web-accordion-item .title {
+  font-family: "Lato", "Lato-Bold";
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  font-weight: 700;
+  color: black;
+  color: #242525;
   margin: 0;
-  padding: 10px;
+  padding: 24px 16px 8px 16px;
   cursor: pointer; }
 
-.o-accordion web-accordion-item div {
-  background: lightgray;
-  padding: 20px 10px; }
+.o-accordion web-accordion-item .title:first-child {
+  padding: 16px; }
+
+.o-accordion web-accordion-item .content {
+  font-family: "Lato", "Lato-Regular";
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 22px;
+  font-weight: 400;
+  color: black;
+  color: #242525;
+  padding: 0 16px 16px 40px; }
 
 .background__vineyard001 {
   background: url(/assets/image/vineyard/001@1x.jpg) no-repeat center center fixed;
