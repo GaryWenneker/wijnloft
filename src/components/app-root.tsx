@@ -1,3 +1,5 @@
+import '@vaadin/vaadin-tabs/vaadin-tabs.js';
+
 import { Component, Listen, State, h } from '@stencil/core';
 
 import { LocationSegments } from '@stencil/router';

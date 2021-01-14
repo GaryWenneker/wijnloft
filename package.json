@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@stencil/router": "^1.0.1",
+    "@vaadin/vaadin-tabs": "^3.2.0",
     "faunadb": "^2.13.1"
   },
   "devDependencies": {
