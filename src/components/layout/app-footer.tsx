@@ -16,14 +16,13 @@ export class IpAppFooter {
                         <div class="twelve column">
                             <div class="row">
                                 <div class="four columns offset-by-two">
-                                    <div class="twelve columns label-standard" style={{ marginTop: '80px' }}>Geen 18, Geen alcohol.</div>
                                     <div class="row">
-                                        <div class="six columns" style={{ marginTop: '32px' }}>
+                                        <div class="six columns o-footer__menu">
                                             <div class="twelve columns label-standard">Klantenservice</div>
                                             <div class="twelve columns label-standard">Privacy</div>
                                             <div class="twelve columns label-standard">Algemene voorwaarden</div>
                                         </div>
-                                        <div class="six columns" style={{ marginTop: '32px' }}>
+                                        <div class="six columns o-footer__menu">
                                             <div class="twelve columns label-standard">Klantenservice</div>
                                             <div class="twelve columns label-standard">Privacy</div>
                                             <div class="twelve columns label-standard">Algemene voorwaarden</div>
@@ -31,8 +30,8 @@ export class IpAppFooter {
                                     </div>
                                 </div>
                                 <div class="four columns">
-                                    <div class="twelve columns label-standard" style={{ marginTop: '80px' }}>Copyright © 2020 WijnLoft. Alle rechten voorbehouden</div>
-                                    <div class="twelve columns label-standard" style={{ marginTop: '32px' }}>Gratis verzending vanaf 12 flessen of 100 euro – Op werkdagen besteld voor 11 uur is morgen in huis</div>
+                                    <div class="twelve columns label-standard o-footer__copyright">Copyright © 2020 WijnLoft. Alle rechten voorbehouden</div>
+                                    <div class="twelve columns label-standard o-footer__payoff">Gratis verzending vanaf 12 flessen of 100 euro – Op werkdagen besteld voor 11 uur is morgen in huis</div>
                                 </div>
                             </div>
                         </div>

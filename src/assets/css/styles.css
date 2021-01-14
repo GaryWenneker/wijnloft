@@ -311,13 +311,14 @@ p, .paragraph-standard {
   line-height: 20px;
   font-weight: 400;
   color: black; }
-  .label-standard__bold {
-    font-family: "Lato", "Lato-Bold";
-    font-size: 16px;
-    letter-spacing: 0px;
-    line-height: 20px;
-    font-weight: 700;
-    color: black; }
+
+.label-standard__bold {
+  font-family: "Lato", "Lato-Bold";
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  font-weight: 700;
+  color: black; }
 
 /* Modules */
 /*
@@ -459,14 +460,17 @@ p, .paragraph-standard {
   color: black;
   color: #ffffff;
   transition: background-color 300ms linear; }
-  a .btn-primary {
-    text-decoration: none; }
-  .btn-primary:hover {
-    background: #2e6092;
-    text-decoration: underline; }
-  .btn-primary ion-icon {
-    padding-left: 8px;
-    color: #ffffff; }
+
+a .btn-primary {
+  text-decoration: none; }
+
+.btn-primary:hover {
+  background: #2e6092;
+  text-decoration: underline; }
+
+.btn-primary ion-icon {
+  padding-left: 8px;
+  color: #ffffff; }
 
 .btn-ghost {
   text-decoration: none;
@@ -487,10 +491,12 @@ p, .paragraph-standard {
   color: black;
   color: #ffffff;
   transition: background-color 300ms linear; }
-  a .btn-ghost {
-    text-decoration: none; }
-  .btn-ghost:hover {
-    text-decoration: underline; }
+
+a .btn-ghost {
+  text-decoration: none; }
+
+.btn-ghost:hover {
+  text-decoration: underline; }
 
 .button,
 button {
@@ -627,17 +633,18 @@ select {
   color: black;
   color: #242525;
   margin-bottom: 16px; }
-  input[type='email'].full-width,
-  input[type='number'].full-width,
-  input[type='search'].full-width,
-  input[type='text'].full-width,
-  input[type='tel'].full-width,
-  input[type='url'].full-width,
-  input[type='password'].full-width,
-  textarea.full-width,
-  select.full-width {
-    width: 100%;
-    max-width: 384px; }
+
+input[type='email'].full-width,
+input[type='number'].full-width,
+input[type='search'].full-width,
+input[type='text'].full-width,
+input[type='tel'].full-width,
+input[type='url'].full-width,
+input[type='password'].full-width,
+textarea.full-width,
+select.full-width {
+  width: 100%;
+  max-width: 384px; }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
   -webkit-appearance: none;
@@ -690,9 +697,10 @@ ol {
 ul {
   padding-left: 0;
   margin-top: 0; }
-  ul ul, ul ol {
-    margin: 1.5rem 0 1.5rem 3rem;
-    font-size: 90%; }
+
+ul ul, ul ol {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
 
 ol ol, ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
@@ -756,27 +764,30 @@ form {
   display: flex;
   margin: 6em 0 0 0;
   padding: 80px 0 80px 0; }
-  @media only screen and (min-width: 768px) {
-    .o-content-block {
-      padding: 104px 0 104px 0; } }
-  .o-content-block .title h2 {
-    font-family: "Playfair Display", "PlayfairDisplay-Regular_Bold";
-    font-size: 40px;
-    letter-spacing: 0px;
-    line-height: 48px;
-    font-weight: 700;
-    color: black;
-    color: #242525;
-    margin-bottom: 24px; }
-  .o-content-block .intro {
-    font-family: "Lato", "Lato-Regular";
-    font-size: 18px;
-    letter-spacing: 0px;
-    line-height: 24px;
-    font-weight: 400;
-    color: black;
-    color: #3c3d3f;
-    margin-bottom: 32px; }
+
+@media only screen and (min-width: 768px) {
+  .o-content-block {
+    padding: 104px 0 104px 0; } }
+
+.o-content-block .title h2 {
+  font-family: "Playfair Display", "PlayfairDisplay-Regular_Bold";
+  font-size: 40px;
+  letter-spacing: 0px;
+  line-height: 48px;
+  font-weight: 700;
+  color: black;
+  color: #242525;
+  margin-bottom: 24px; }
+
+.o-content-block .intro {
+  font-family: "Lato", "Lato-Regular";
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  font-weight: 400;
+  color: black;
+  color: #3c3d3f;
+  margin-bottom: 32px; }
 
 .o-usp-counter .row {
   display: flex;
@@ -806,20 +817,24 @@ form {
   position: relative;
   z-index: 10;
   display: flex;
-  min-height: 300px;
   flex: none;
   order: 5;
   align-self: stretch;
   flex-grow: 0;
   margin: 0px 0px;
   background: #f2efe3;
-  padding-bottom: 42px; }
-  .o-footer .label-standard {
-    color: #151515; }
-  @media only screen and (min-width: 768px) {
-    .o-footer {
-      min-height: 280px;
-      padding-bottom: 0px; } }
+  padding: 80px 0; }
+
+.o-footer__menu div {
+  margin-bottom: 16px;
+  color: #151515; }
+
+.o-footer__copyright {
+  margin-bottom: 32px;
+  color: #5c6063; }
+
+.o-footer__payoff {
+  color: #5c6063; }
 
 nav ul {
   list-style-type: none;
@@ -843,62 +858,70 @@ nav li a {
   width: 307px;
   height: 505px;
   margin-bottom: 1em; }
-  .o-wine-block-item__image {
-    left: 34.13%;
-    right: 34.21%;
-    width: 84px;
-    height: 241px;
-    background: url(https://www.svgrepo.com/show/148632/wine-bottle.svg); }
-  .o-wine-block-item__block {
-    width: 315px;
-    height: 319px;
-    background-color: red; }
-  .o-wine-block-item__intro {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    color: #5c6063; }
-  .o-wine-block-item__title {
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #242525; }
-  .o-wine-block-item__price {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
-    color: #2e6092; }
-  .o-wine-block-item__itemsleft {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    color: #5c6063; }
-  .o-wine-block-item__button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 16px 24px;
-    width: 124px;
-    height: 52px;
-    background: #17395c;
-    border-radius: 2px; }
-  .o-wine-block-item__link {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #1c446d; }
+
+.o-wine-block-item__image {
+  left: 34.13%;
+  right: 34.21%;
+  width: 84px;
+  height: 241px;
+  background: url(https://www.svgrepo.com/show/148632/wine-bottle.svg); }
+
+.o-wine-block-item__block {
+  width: 315px;
+  height: 319px;
+  background-color: red; }
+
+.o-wine-block-item__intro {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #5c6063; }
+
+.o-wine-block-item__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #242525; }
+
+.o-wine-block-item__price {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2e6092; }
+
+.o-wine-block-item__itemsleft {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5c6063; }
+
+.o-wine-block-item__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 24px;
+  width: 124px;
+  height: 52px;
+  background: #17395c;
+  border-radius: 2px; }
+
+.o-wine-block-item__link {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1c446d; }
 
 .o-page-header {
   z-index: 10;
@@ -908,177 +931,207 @@ nav li a {
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
   cursor: pointer; }
+
+.o-page-header__col {
+  padding: 16px; }
+
+.o-page-header__col:nth-child(2) {
+  padding: 0; }
+
+.o-page-header__col:nth-child(2) .placeholder__container {
+  display: inline-block;
+  vertical-align: middle; }
+
+@media only screen and (min-width: 1280px) {
   .o-page-header__col {
-    padding: 16px; }
-    .o-page-header__col:nth-child(2) {
-      padding: 0; }
-      .o-page-header__col:nth-child(2) .placeholder__container {
-        display: inline-block;
-        vertical-align: middle; }
-    @media only screen and (min-width: 1280px) {
-      .o-page-header__col {
-        display: flex;
-        align-items: center;
-        padding: 16px; } }
-  .o-page-header__inner-wrap {
     display: flex;
-    justify-content: space-between;
-    width: 100%; }
-  @media only screen and (min-width: 1280px) {
-    .o-page-header:before, .o-page-header:after {
-      content: '';
-      position: absolute;
-      background: white;
-      width: 5px;
-      height: 20px;
-      bottom: -5px; }
-    .o-page-header:after {
-      left: -5px; }
-    .o-page-header:before {
-      right: -5px; } }
-  .o-page-header .m-primary-navigation {
+    align-items: center;
+    padding: 16px; } }
+
+.o-page-header__inner-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+@media only screen and (min-width: 1280px) {
+  .o-page-header:before, .o-page-header:after {
+    content: '';
+    position: absolute;
+    background: white;
+    width: 5px;
+    height: 20px;
+    bottom: -5px; }
+  .o-page-header:after {
+    left: -5px; }
+  .o-page-header:before {
+    right: -5px; } }
+
+.o-page-header .m-primary-navigation {
+  display: flex;
+  color: white;
+  background-color: transparent !important; }
+
+.o-page-header .m-primary-navigation__item {
+  display: flex;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+  font-family: "Lato", "Lato-Regular";
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  font-weight: 400;
+  color: black;
+  padding: 0;
+  align-items: center; }
+
+.o-page-header .m-primary-navigation__item__logo {
+  height: 56px; }
+
+.o-page-header .m-primary-navigation__item__logo a {
+  padding: 0 24px; }
+
+.o-page-header .m-primary-navigation__item a {
+  text-decoration: none; }
+
+.o-page-header .m-primary-navigation__item a:hover {
+  text-decoration: underline; }
+
+@media only screen and (min-width: 1280px) {
+  .o-page-header .m-primary-navigation__item--active .o-page-header .m-primary-navigation {
     display: flex;
-    color: white;
-    background-color: transparent !important; }
-    .o-page-header .m-primary-navigation__item {
-      display: flex;
-      flex: none;
-      order: 0;
-      flex-grow: 0;
-      margin: 0px 0px;
-      font-family: "Lato", "Lato-Regular";
-      font-size: 16px;
-      letter-spacing: 0px;
-      line-height: 20px;
-      font-weight: 400;
-      color: black;
-      padding: 0;
-      align-items: center; }
-      .o-page-header .m-primary-navigation__item__logo {
-        height: 56px; }
-        .o-page-header .m-primary-navigation__item__logo a {
-          padding: 0 24px; }
-      .o-page-header .m-primary-navigation__item a {
-        text-decoration: none; }
-        .o-page-header .m-primary-navigation__item a:hover {
-          text-decoration: underline; }
-    @media only screen and (min-width: 1280px) {
-      .o-page-header .m-primary-navigation__item--active .o-page-header .m-primary-navigation {
-        display: flex;
-        transition: opacity 0.2s 0s;
-        opacity: 1;
-        pointer-events: all; } }
+    transition: opacity 0.2s 0s;
+    opacity: 1;
+    pointer-events: all; } }
 
 .o-header-bottom {
   display: flex;
   justify-content: space-between;
   position: relative; }
-  @media only screen and (min-width: 768px) {
-    .o-header-bottom .m-country-selector {
-      display: none; } }
+
+@media only screen and (min-width: 768px) {
+  .o-header-bottom .m-country-selector {
+    display: none; } }
+
+.o-header-bottom__col {
+  padding: 16px; }
+
+.o-header-bottom__col:nth-child(2) {
+  padding: 0; }
+
+.o-header-bottom__col:nth-child(2) .placeholder__container {
+  display: inline-block;
+  vertical-align: middle; }
+
+@media only screen and (min-width: 1280px) {
   .o-header-bottom__col {
-    padding: 16px; }
-    .o-header-bottom__col:nth-child(2) {
-      padding: 0; }
-      .o-header-bottom__col:nth-child(2) .placeholder__container {
-        display: inline-block;
-        vertical-align: middle; }
-    @media only screen and (min-width: 1280px) {
-      .o-header-bottom__col {
-        display: flex;
-        align-items: center;
-        padding: 16px; } }
-  .o-header-bottom__inner-wrap {
     display: flex;
-    justify-content: space-between;
-    width: 100%; }
-  .o-header-bottom__account__button {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    padding: 16px 24px;
-    color: white;
-    position: static;
-    left: 0px;
-    top: 2px;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 2px; }
-  @media only screen and (min-width: 1280px) {
-    .o-header-bottom:before, .o-header-bottom:after {
-      content: '';
-      position: absolute;
-      background: white;
-      width: 5px;
-      height: 20px;
-      bottom: -5px; }
-    .o-header-bottom:after {
-      left: -5px; }
-    .o-header-bottom:before {
-      right: -5px; } }
+    padding: 16px; } }
+
+.o-header-bottom__inner-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+.o-header-bottom__account__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 24px;
+  color: white;
+  position: static;
+  left: 0px;
+  top: 2px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 2px; }
+
+@media only screen and (min-width: 1280px) {
+  .o-header-bottom:before, .o-header-bottom:after {
+    content: '';
+    position: absolute;
+    background: white;
+    width: 5px;
+    height: 20px;
+    bottom: -5px; }
+  .o-header-bottom:after {
+    left: -5px; }
+  .o-header-bottom:before {
+    right: -5px; } }
 
 .home-intro {
   margin-top: 0px; }
+
+.home-intro .title h1 {
+  font-family: "Playfair Display", "PlayfairDisplay-Regular_Bold";
+  font-size: 32px;
+  letter-spacing: 0px;
+  line-height: 40px;
+  font-weight: 700;
+  color: black;
+  color: #ffffff; }
+
+@media only screen and (min-width: 1024px) {
   .home-intro .title h1 {
     font-family: "Playfair Display", "PlayfairDisplay-Regular_Bold";
-    font-size: 32px;
+    font-size: 68px;
     letter-spacing: 0px;
-    line-height: 40px;
+    line-height: 76px;
     font-weight: 700;
     color: black;
-    color: #ffffff; }
-    @media only screen and (min-width: 1024px) {
-      .home-intro .title h1 {
-        font-family: "Playfair Display", "PlayfairDisplay-Regular_Bold";
-        font-size: 68px;
-        letter-spacing: 0px;
-        line-height: 76px;
-        font-weight: 700;
-        color: black;
-        color: #ffffff;
-        margin-bottom: 24px; } }
-  .home-intro p {
     color: #ffffff;
-    margin-bottom: 40px; }
-  @media only screen and (min-width: 768px) {
-    .home-intro {
-      margin-top: 80px; } }
-  @media only screen and (min-width: 1024px) {
-    .home-intro {
-      padding: 104px 0px; } }
+    margin-bottom: 24px; } }
+
+.home-intro p {
+  color: #ffffff;
+  margin-bottom: 40px; }
+
+@media only screen and (min-width: 768px) {
+  .home-intro {
+    margin-top: 80px; } }
+
+@media only screen and (min-width: 1024px) {
+  .home-intro {
+    padding: 104px 0px; } }
 
 .o-accordion {
   max-width: 592px;
   margin: 0px auto; }
-  .o-accordion web-accordion-item .title {
-    margin: 0 auto;
-    max-width: 592px;
-    font-family: "Lato", "Lato-Bold";
-    font-size: 16px;
-    letter-spacing: 0px;
-    line-height: 20px;
-    font-weight: 700;
-    color: black;
-    color: #242525;
-    padding: 24px 16px 8px 16px;
-    cursor: pointer;
-    border-top: 1px solid #cfd4d7;
-    background: transparent; }
-    .o-accordion web-accordion-item .title:first-child {
-      padding: 16px; }
-    .o-accordion web-accordion-item .title:hover, .o-accordion web-accordion-item .title:focus {
-      text-decoration: underline; }
-  .o-accordion web-accordion-item .content {
-    margin: 0 auto;
-    max-width: 592px;
-    font-family: "Lato", "Lato-Regular";
-    font-size: 16px;
-    letter-spacing: 0px;
-    line-height: 22px;
-    font-weight: 400;
-    color: black;
-    color: #242525;
-    padding: 0 16px 16px 40px;
-    background: transparent; }
+
+.o-accordion web-accordion-item .title {
+  margin: 0 auto;
+  max-width: 592px;
+  font-family: "Lato", "Lato-Bold";
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  font-weight: 700;
+  color: black;
+  color: #242525;
+  padding: 24px 16px 8px 16px;
+  cursor: pointer;
+  border-top: 1px solid #cfd4d7;
+  background: transparent; }
+
+.o-accordion web-accordion-item .title:first-child {
+  padding: 16px; }
+
+.o-accordion web-accordion-item .title:hover, .o-accordion web-accordion-item .title:focus {
+  text-decoration: underline; }
+
+.o-accordion web-accordion-item .content {
+  margin: 0 auto;
+  max-width: 592px;
+  font-family: "Lato", "Lato-Regular";
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 22px;
+  font-weight: 400;
+  color: black;
+  color: #242525;
+  padding: 0 16px 16px 40px;
+  background: transparent; }
 
 .background__vineyard001 {
   background: url(/assets/image/vineyard/001@1x.jpg) no-repeat center center fixed;
@@ -1089,44 +1142,52 @@ nav li a {
 
 .card {
   background: #ffffff; }
-  @media only screen and (min-width: 320px) {
-    .card {
-      padding: 24px; } }
-  @media only screen and (min-width: 1024px) {
-    .card {
-      padding: 56px 104px; } }
-  .card h2 {
-    font-family: "Playfair Display", "PlayfairDisplay-Regular_Bold";
-    font-size: 40px;
-    letter-spacing: 0px;
-    line-height: 48px;
-    font-weight: 700;
-    color: black;
-    color: #151515;
-    margin-bottom: 16px; }
-  .card p {
-    font-family: "Lato", "Lato-Regular";
-    font-size: 16px;
-    letter-spacing: 0px;
-    line-height: 22px;
-    font-weight: 400;
-    color: black;
-    color: #151515;
-    margin-bottom: 24px; }
+
+@media only screen and (min-width: 320px) {
+  .card {
+    padding: 24px; } }
+
+@media only screen and (min-width: 1024px) {
+  .card {
+    padding: 56px 104px; } }
+
+.card h2 {
+  font-family: "Playfair Display", "PlayfairDisplay-Regular_Bold";
+  font-size: 40px;
+  letter-spacing: 0px;
+  line-height: 48px;
+  font-weight: 700;
+  color: black;
+  color: #151515;
+  margin-bottom: 16px; }
+
+.card p {
+  font-family: "Lato", "Lato-Regular";
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 22px;
+  font-weight: 400;
+  color: black;
+  color: #151515;
+  margin-bottom: 24px; }
+
+.card__signup {
+  background: #FFF url(/assets/stamp/in-vino-veritas/001/half.svg);
+  background-size: 184px;
+  background-repeat: no-repeat;
+  background-position: center right; }
+
+.card__signup form .btn-primary {
+  margin-top: 24px;
+  margin-bottom: 0; }
+
+@media only screen and (min-width: 320px) {
   .card__signup {
-    background: #FFF url(/assets/stamp/in-vino-veritas/001/half.svg);
-    background-size: 184px;
-    background-repeat: no-repeat;
-    background-position: center right; }
-    .card__signup form .btn-primary {
-      margin-top: 24px;
-      margin-bottom: 0; }
-    @media only screen and (min-width: 320px) {
-      .card__signup {
-        margin: 24px 0; } }
-    @media only screen and (min-width: 1024px) {
-      .card__signup {
-        margin: 152px 0; } }
+    margin: 24px 0; } }
+
+@media only screen and (min-width: 1024px) {
+  .card__signup {
+    margin: 152px 0; } }
 
 .o-video {
   z-index: -100; }
@@ -1153,8 +1214,9 @@ html, body {
   cursor: pointer;
   /* Add a pointer on hover */
   background: linear-gradient(to left bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%) fixed; }
-  .overlay.active {
-    display: inline; }
+
+.overlay.active {
+  display: inline; }
 
 .inverted {
   color: white; }
