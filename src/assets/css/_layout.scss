@@ -49,6 +49,48 @@
 	}
 }
 
+.o-myaccount {
+	padding-top: map-get($spacings, 7);
+	padding-bottom: map-get($spacings, 14);
+	h1 {
+		margin-bottom: map-get($spacings, 4);
+		@include heading-h1;
+		color: $gray-scale-8;
+	}
+	h2 {
+		margin-bottom: map-get($spacings, 1);
+		@include heading-h4;
+		color: $gray-scale-8;
+	}
+	p {
+		margin-bottom: map-get($spacings, 5);
+		color: $gray-scale-7;
+	}
+	&__section {
+		border-bottom: 1px solid $gray-scale-3;
+		margin-bottom: map-get($spacings, 3);
+	}
+	&__address {
+		margin-bottom: map-get($spacings, 5);
+		@include label-standard;
+		color: $gray-scale-8;
+
+		> div:first-of-type {
+			@include label-standard-bold;
+			margin-bottom: map-get($spacings, 2);
+		}
+		div {
+			margin-bottom: map-get($spacings, 1);
+		}
+
+		@include mq("XS") {
+			&:first-child {
+				margin-bottom: map-get($spacings, 3);
+			}
+		}
+	}
+}
+
 .o-footer {
     position: relative;
 	z-index: 10;

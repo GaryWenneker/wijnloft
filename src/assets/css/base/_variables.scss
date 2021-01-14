@@ -211,6 +211,22 @@ $heading-h2-mobile-color: black;
   font-weight: $heading-h2-mobile-font-weight;
   color: $heading-h2-mobile-color;
 }
+/** heading-h4 **/
+$heading-h4-font-family: 'Playfair Display', 'PlayfairDisplay-Regular_Bold';
+$heading-h4-font-size: 24px;
+$heading-h4-letter-spacing: 0px;
+$heading-h4-line-height: 32px;
+$heading-h4-font-weight: 700;
+$heading-h4-color: black;
+
+@mixin heading-h4() {
+  font-family: $heading-h4-font-family;
+  font-size: $heading-h4-font-size;
+  letter-spacing: $heading-h4-letter-spacing;
+  line-height: $heading-h4-line-height;
+  font-weight: $heading-h4-font-weight;
+  color: $heading-h4-color;
+}
 /** heading-title **/
 $heading-title-font-family: 'Playfair Display', 'PlayfairDisplay-Regular_Bold';
 $heading-title-font-size: 68px;

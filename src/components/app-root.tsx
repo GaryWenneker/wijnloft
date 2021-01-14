@@ -1,5 +1,19 @@
 import '@vaadin/vaadin-tabs/vaadin-tabs.js';
 
+import { registerStyles, css } from '@vaadin/vaadin-themable-mixin/register-styles.js';
+
+// Register your custom CSS rules for vaadin-button
+registerStyles('vaadin-tabs', css`
+  :host([orientation="horizontal"]) [part="tabs"] {
+    margin: 0;
+  }
+  :host::after {
+    box-shadow: 0 0 0 0 red;
+    opacity: 0.15;
+    transition: 0.15s 0.02s transform, 0.8s 0.17s opacity;
+  }
+`);
+
 import { Component, Listen, State, h } from '@stencil/core';
 
 import { LocationSegments } from '@stencil/router';

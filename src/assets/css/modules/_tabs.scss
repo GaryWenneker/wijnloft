@@ -1,0 +1,26 @@
+vaadin-tabs[orientation="horizontal"] {
+    margin-bottom: map-get($spacings, 4);
+    box-shadow: inset 0 -1px 0 0 $gray-scale-3;
+    [part="tabs"] {
+        margin: 0;
+      }
+}
+[part="tabs"] {
+    margin: 0;
+}
+
+vaadin-tab {
+    padding: map-get($spacings, 2);
+    @include label-standard;
+
+    &::before, &::after {
+        width: 100%;
+        height: 1px;
+        background-color: $brand-primary-6;
+        box-shadow: none;
+    }
+}
+vaadin-tab[selected] {
+    color: $brand-primary-6;
+    transition: 0s;
+}
