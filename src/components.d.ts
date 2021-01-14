@@ -20,6 +20,8 @@ export namespace Components {
     }
     interface IpAppAbout {
     }
+    interface IpAppAccount {
+    }
     interface IpAppFaq {
     }
     interface IpAppFooter {
@@ -116,6 +118,12 @@ declare global {
         prototype: HTMLIpAppAboutElement;
         new (): HTMLIpAppAboutElement;
     };
+    interface HTMLIpAppAccountElement extends Components.IpAppAccount, HTMLStencilElement {
+    }
+    var HTMLIpAppAccountElement: {
+        prototype: HTMLIpAppAccountElement;
+        new (): HTMLIpAppAccountElement;
+    };
     interface HTMLIpAppFaqElement extends Components.IpAppFaq, HTMLStencilElement {
     }
     var HTMLIpAppFaqElement: {
@@ -199,6 +207,7 @@ declare global {
         "gl-background-video": HTMLGlBackgroundVideoElement;
         "ip-app-aanmelden": HTMLIpAppAanmeldenElement;
         "ip-app-about": HTMLIpAppAboutElement;
+        "ip-app-account": HTMLIpAppAccountElement;
         "ip-app-faq": HTMLIpAppFaqElement;
         "ip-app-footer": HTMLIpAppFooterElement;
         "ip-app-hoe": HTMLIpAppHoeElement;
@@ -227,6 +236,8 @@ declare namespace LocalJSX {
     interface IpAppAanmelden {
     }
     interface IpAppAbout {
+    }
+    interface IpAppAccount {
     }
     interface IpAppFaq {
     }
@@ -295,6 +306,7 @@ declare namespace LocalJSX {
         "gl-background-video": GlBackgroundVideo;
         "ip-app-aanmelden": IpAppAanmelden;
         "ip-app-about": IpAppAbout;
+        "ip-app-account": IpAppAccount;
         "ip-app-faq": IpAppFaq;
         "ip-app-footer": IpAppFooter;
         "ip-app-hoe": IpAppHoe;
@@ -318,6 +330,7 @@ declare module "@stencil/core" {
             "gl-background-video": LocalJSX.GlBackgroundVideo & JSXBase.HTMLAttributes<HTMLGlBackgroundVideoElement>;
             "ip-app-aanmelden": LocalJSX.IpAppAanmelden & JSXBase.HTMLAttributes<HTMLIpAppAanmeldenElement>;
             "ip-app-about": LocalJSX.IpAppAbout & JSXBase.HTMLAttributes<HTMLIpAppAboutElement>;
+            "ip-app-account": LocalJSX.IpAppAccount & JSXBase.HTMLAttributes<HTMLIpAppAccountElement>;
             "ip-app-faq": LocalJSX.IpAppFaq & JSXBase.HTMLAttributes<HTMLIpAppFaqElement>;
             "ip-app-footer": LocalJSX.IpAppFooter & JSXBase.HTMLAttributes<HTMLIpAppFooterElement>;
             "ip-app-hoe": LocalJSX.IpAppHoe & JSXBase.HTMLAttributes<HTMLIpAppHoeElement>;

@@ -36,7 +36,7 @@ export class Header {
 
             </div>
             <div class="m-flex-columns__col o-header-bottom__col">
-              <div class="o-header-bottom__account__button btn-ghost">Mijn account</div>
+              <div class="o-header-bottom__account__button btn-ghost"><stencil-route-link url="/account">Mijn account</stencil-route-link></div>
             </div>
           </div>
         </div>

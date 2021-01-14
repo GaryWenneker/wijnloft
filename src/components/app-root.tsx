@@ -67,6 +67,12 @@ export class IpAppRoot {
               component="ip-app-faq"
               routeRender={props => <ip-stencil-route-listener props={props} />}
             />
+            <stencil-route
+              url="/account"
+              exact={true}
+              component="ip-app-account"
+              routeRender={props => <ip-stencil-route-listener props={props} />}
+            />
           </stencil-route-switch>
         </stencil-router>
         <ip-app-footer></ip-app-footer>
