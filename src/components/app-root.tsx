@@ -8,9 +8,9 @@ registerStyles('vaadin-tabs', css`
     margin: 0;
   }
   :host::after {
-    box-shadow: 0 0 0 0 red;
+    box-shadow: 0 0 0 0;
     opacity: 0.15;
-    transition: 0.15s 0.02s transform, 0.8s 0.17s opacity;
+    transition: 0.15s 0.03s transform, 0.8s 0.17s opacity;
   }
 `);
 

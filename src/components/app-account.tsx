@@ -29,7 +29,8 @@ export class IpAppAccount {
         <div class="row">
           <div class="eight columns offset-by-two">
             <div class="o-myaccount__section">
-              <h2>Account informatie  </h2>
+              <h2>Persoonsgegevens</h2>
+              <div class="btn-text">Wijzigen</div>
             </div>
           </div>      
         </div>
@@ -49,6 +50,7 @@ export class IpAppAccount {
           <div class="eight columns offset-by-two">
             <div class="o-myaccount__section">
               <h2>Adresgegevens</h2>
+              <div class="btn-text">Wijzigen</div>
             </div>
           </div>      
         </div>
