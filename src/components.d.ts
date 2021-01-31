@@ -39,6 +39,10 @@ export namespace Components {
     }
     interface IpAppVoordelen {
     }
+    interface IpAppWijnDetail {
+    }
+    interface IpAppWijnOverzicht {
+    }
     interface IpContentBlock {
         "backgroundColor": string;
         "margin": string;
@@ -166,6 +170,18 @@ declare global {
         prototype: HTMLIpAppVoordelenElement;
         new (): HTMLIpAppVoordelenElement;
     };
+    interface HTMLIpAppWijnDetailElement extends Components.IpAppWijnDetail, HTMLStencilElement {
+    }
+    var HTMLIpAppWijnDetailElement: {
+        prototype: HTMLIpAppWijnDetailElement;
+        new (): HTMLIpAppWijnDetailElement;
+    };
+    interface HTMLIpAppWijnOverzichtElement extends Components.IpAppWijnOverzicht, HTMLStencilElement {
+    }
+    var HTMLIpAppWijnOverzichtElement: {
+        prototype: HTMLIpAppWijnOverzichtElement;
+        new (): HTMLIpAppWijnOverzichtElement;
+    };
     interface HTMLIpContentBlockElement extends Components.IpContentBlock, HTMLStencilElement {
     }
     var HTMLIpContentBlockElement: {
@@ -215,6 +231,8 @@ declare global {
         "ip-app-onze-wijnhuizen": HTMLIpAppOnzeWijnhuizenElement;
         "ip-app-root": HTMLIpAppRootElement;
         "ip-app-voordelen": HTMLIpAppVoordelenElement;
+        "ip-app-wijn-detail": HTMLIpAppWijnDetailElement;
+        "ip-app-wijn-overzicht": HTMLIpAppWijnOverzichtElement;
         "ip-content-block": HTMLIpContentBlockElement;
         "ip-stencil-route-listener": HTMLIpStencilRouteListenerElement;
         "ip-usp-counter": HTMLIpUspCounterElement;
@@ -255,6 +273,10 @@ declare namespace LocalJSX {
     interface IpAppRoot {
     }
     interface IpAppVoordelen {
+    }
+    interface IpAppWijnDetail {
+    }
+    interface IpAppWijnOverzicht {
     }
     interface IpContentBlock {
         "backgroundColor"?: string;
@@ -314,6 +336,8 @@ declare namespace LocalJSX {
         "ip-app-onze-wijnhuizen": IpAppOnzeWijnhuizen;
         "ip-app-root": IpAppRoot;
         "ip-app-voordelen": IpAppVoordelen;
+        "ip-app-wijn-detail": IpAppWijnDetail;
+        "ip-app-wijn-overzicht": IpAppWijnOverzicht;
         "ip-content-block": IpContentBlock;
         "ip-stencil-route-listener": IpStencilRouteListener;
         "ip-usp-counter": IpUspCounter;
@@ -338,6 +362,8 @@ declare module "@stencil/core" {
             "ip-app-onze-wijnhuizen": LocalJSX.IpAppOnzeWijnhuizen & JSXBase.HTMLAttributes<HTMLIpAppOnzeWijnhuizenElement>;
             "ip-app-root": LocalJSX.IpAppRoot & JSXBase.HTMLAttributes<HTMLIpAppRootElement>;
             "ip-app-voordelen": LocalJSX.IpAppVoordelen & JSXBase.HTMLAttributes<HTMLIpAppVoordelenElement>;
+            "ip-app-wijn-detail": LocalJSX.IpAppWijnDetail & JSXBase.HTMLAttributes<HTMLIpAppWijnDetailElement>;
+            "ip-app-wijn-overzicht": LocalJSX.IpAppWijnOverzicht & JSXBase.HTMLAttributes<HTMLIpAppWijnOverzichtElement>;
             "ip-content-block": LocalJSX.IpContentBlock & JSXBase.HTMLAttributes<HTMLIpContentBlockElement>;
             "ip-stencil-route-listener": LocalJSX.IpStencilRouteListener & JSXBase.HTMLAttributes<HTMLIpStencilRouteListenerElement>;
             "ip-usp-counter": LocalJSX.IpUspCounter & JSXBase.HTMLAttributes<HTMLIpUspCounterElement>;

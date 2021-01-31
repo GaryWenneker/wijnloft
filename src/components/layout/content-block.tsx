@@ -5,7 +5,7 @@ import { Component, Prop, h } from '@stencil/core';
 })
 export class IpAppHoe {
     @Prop()
-    backgroundColor: string = '#ffffff';
+    backgroundColor: string = '#F2F0EB';
     @Prop()
     margin: string = '6em 0 6em 0';
     render() {

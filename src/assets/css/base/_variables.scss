@@ -63,6 +63,23 @@ $border-color: #bbb !default;
 $link-color: #1eaedb !default;
 $font-color: #222 !default;
 
+// Typography
+$font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+//Grid Variables
+$container-width: 1280px !default;
+$container-width-larger-than-mobile: 85% !default;
+$container-width-larger-than-phablet: 80% !default;
+$total-columns: 12 !default;
+$column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
+$column-margin: 2.77% !default; // space between columns
+
+// Misc
+$global-radius: 4px !default;
+
+/**** DESIGN TOKENS ****/
+
+
 /**** Colors ****/
 $brand-neutral-0: #fffefa;
 $brand-neutral-1: #f2efe3;
@@ -243,6 +260,22 @@ $heading-title-color: black;
   font-weight: $heading-title-font-weight;
   color: $heading-title-color;
 }
+/** label-medium-semibold **/
+$label-medium-semibold-font-family: 'Lato', 'Lato-SemiBold';
+$label-medium-semibold-font-size: 18px;
+$label-medium-semibold-letter-spacing: 0px;
+$label-medium-semibold-line-height: 24px;
+$label-medium-semibold-font-weight: 600;
+$label-medium-semibold-color: black;
+
+@mixin label-medium-semibold() {
+  font-family: $label-medium-semibold-font-family;
+  font-size: $label-medium-semibold-font-size;
+  letter-spacing: $label-medium-semibold-letter-spacing;
+  line-height: $label-medium-semibold-line-height;
+  font-weight: $label-medium-semibold-font-weight;
+  color: $label-medium-semibold-color;
+}
 /** label-standard **/
 $label-standard-font-family: 'Lato', 'Lato-Regular';
 $label-standard-font-size: 16px;
@@ -293,6 +326,24 @@ $label-standard-underline-color: black;
   text-decoration: $label-standard-underline-text-decoration;
   color: $label-standard-underline-color;
 }
+/** label-tiny-bold-caps **/
+$label-tiny-bold-caps-font-family: 'Lato', 'Lato-Bold';
+$label-tiny-bold-caps-font-size: 10px;
+$label-tiny-bold-caps-letter-spacing: 0px;
+$label-tiny-bold-caps-line-height: 18px;
+$label-tiny-bold-caps-font-weight: 700;
+$label-tiny-bold-caps-text-transform: uppercase;
+$label-tiny-bold-caps-color: black;
+
+@mixin label-tiny-bold-caps() {
+  font-family: $label-tiny-bold-caps-font-family;
+  font-size: $label-tiny-bold-caps-font-size;
+  letter-spacing: $label-tiny-bold-caps-letter-spacing;
+  line-height: $label-tiny-bold-caps-line-height;
+  font-weight: $label-tiny-bold-caps-font-weight;
+  text-transform: $label-tiny-bold-caps-text-transform;
+  color: $label-tiny-bold-caps-color;
+}
 /** paragraph-extra-large **/
 $paragraph-extra-large-font-family: 'Lato', 'Lato-Regular';
 $paragraph-extra-large-font-size: 20px;
@@ -341,19 +392,3 @@ $paragraph-standard-color: black;
   font-weight: $paragraph-standard-font-weight;
   color: $paragraph-standard-color;
 }
-
-
-
-// Typography
-$font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-
-//Grid Variables
-$container-width: 1280px !default;
-$container-width-larger-than-mobile: 85% !default;
-$container-width-larger-than-phablet: 80% !default;
-$total-columns: 12 !default;
-$column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
-$column-margin: 2.77% !default; // space between columns
-
-// Misc
-$global-radius: 4px !default;

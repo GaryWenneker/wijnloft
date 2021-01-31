@@ -1,5 +1,29 @@
 // Buttons
 //––––––––––––––––––––––––––––––––––––––––––––––––––
+.a-backbutton {
+  @include label-standard;
+  margin-bottom: map-get($spacings, 4);
+  color: $brand-primary-8;
+
+  ion-icon {
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+    margin-top: 2px;
+    color: $brand-primary-8;
+    vertical-align: text-bottom;
+  }
+  
+  a {
+    color: $brand-primary-8;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 .btn-primary {
   text-decoration: none;
   text-shadow: none;

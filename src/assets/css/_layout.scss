@@ -91,6 +91,151 @@
 	}
 }
 
+.o-wine-overview {
+	margin-top: map-get($spacings, 7);
+
+	*, *:before, *:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	h2 {
+		@include heading-h2;
+		color: $gray-scale-9;
+		margin-bottom: map-get($spacings, 5);
+	}
+	.a-backbutton {
+		margin-bottom: map-get($spacings, 2);
+	}
+	&__products {
+		display: flex;
+	}
+	&__product {
+		min-width: 33%;
+		flex: 3;
+		margin-right: 32px;
+		margin-bottom: 32px;
+		float: left;
+
+		&:last-child {
+			margin-right: 0px;
+		}	
+
+		&-image {
+			img {
+				width: 100%;
+				border: 10px solid white;
+			}
+		}
+		&-description {
+			padding: 0px 10px;
+
+			.product__title {
+				@include heading-h4;
+				color: $gray-scale-9;
+				text-decoration: none;
+				float: left;
+				margin-bottom: map-get($spacings, 1);
+			}
+			.product__price {
+				@include label-medium-semibold;
+				color: $gray-scale-9;
+				padding-top: map-get($spacings, 1);
+				margin-bottom: map-get($spacings, 1);
+				float: right;
+			}
+			.product__payoff {
+				@include label-tiny-bold-caps;
+				color: $gray-scale-9;
+				float: left;
+			}
+		}
+	}
+}
+
+.o-wine-detail {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	z-index: 10;
+
+	.product-picture {
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+		background: url(/assets/image/wine/antinori/cuvee-royale/background/boxed.png);
+		background-attachment: initial;
+		//background-origin: content-box;
+		background-size: auto;
+		background-repeat: no-repeat;
+		background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+		background-size: cover;
+		
+		@include mq("XS") {
+			width: 100%;
+		}
+		@include mq("L") {
+			width: 50%;
+		}
+	}
+	.product-details {
+		float: left;
+		box-sizing: border-box;
+
+		@include mq("XS") {
+			padding: 40px 24px;
+			width: 100%;
+		}
+		@include mq("XS") {
+			padding: 40px 24px;
+			width: 100%;
+		}
+		@include mq("L") {
+			padding: 96px;
+			width: 50%;
+		}
+
+		&__description {
+			h1 {
+				@include heading-h2;
+				margin-bottom: map-get($spacings, 3);
+				color: $gray-scale-8;
+			}
+
+			p {
+				color: $gray-scale-8;
+			}
+		}
+		&__stock {
+			margin-bottom: 4px;
+			@include label-standard;
+			color: $gray-scale-6;
+		}
+		&__price {
+			margin-bottom: 24px;
+			@include label-large-bold;
+			color: $gray-scale-8;
+		}
+		&__amount {
+			margin-bottom: 32px;
+			[part="decrease-button"] {
+				opacity: 0.5;
+			}
+			input {
+				@include label-standard;
+			}
+		}
+		
+	}
+}
+
 .o-footer {
     position: relative;
 	z-index: 10;
